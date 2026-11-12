@@ -1,0 +1,24 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Local verification temporaries
+results/training_replay_*/
+rebuilt_runs/
+rebuilt_training_data/
+
+# Editors and operating systems
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# LaTeX build products (evidence logs under results/ are intentionally tracked)
+*.aux
+*.out
+*.spl
+*.fdb_latexmk
+*.fls
+*.synctex.gz

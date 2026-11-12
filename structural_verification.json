@@ -1,0 +1,554 @@
+{
+  "protocol": "strengthened-cold-v1",
+  "schema_and_finiteness": "pass for all 45 runs",
+  "schema_records": [
+    {
+      "run": "exact_S20_seed99",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S20_seed99",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S20_seed99",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S20_seed100",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S20_seed100",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S20_seed100",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S20_seed101",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S20_seed101",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S20_seed101",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S20_seed102",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S20_seed102",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S20_seed102",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S20_seed103",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S20_seed103",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S20_seed103",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S50_seed99",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S50_seed99",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S50_seed99",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S50_seed100",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S50_seed100",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S50_seed100",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S50_seed101",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S50_seed101",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S50_seed101",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S50_seed102",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S50_seed102",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S50_seed102",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S50_seed103",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S50_seed103",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S50_seed103",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S100_seed99",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S100_seed99",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S100_seed99",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S100_seed100",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S100_seed100",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S100_seed100",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S100_seed101",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S100_seed101",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S100_seed101",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S100_seed102",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S100_seed102",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S100_seed102",
+      "arrays": 17,
+      "status": "pass"
+    },
+    {
+      "run": "exact_S100_seed103",
+      "arrays": 13,
+      "status": "pass"
+    },
+    {
+      "run": "ml_S100_seed103",
+      "arrays": 12,
+      "status": "pass"
+    },
+    {
+      "run": "hybrid_S100_seed103",
+      "arrays": 17,
+      "status": "pass"
+    }
+  ],
+  "full_ml_replay": "bitwise pass for all 15 instances",
+  "ml_records": [
+    {
+      "S": 20,
+      "seed": 99,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 20,
+      "seed": 100,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 20,
+      "seed": 101,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 20,
+      "seed": 102,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 20,
+      "seed": 103,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 50,
+      "seed": 99,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 50,
+      "seed": 100,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 50,
+      "seed": 101,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 50,
+      "seed": 102,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 50,
+      "seed": 103,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 100,
+      "seed": 99,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 100,
+      "seed": 100,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 100,
+      "seed": 101,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 100,
+      "seed": 102,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    },
+    {
+      "S": 100,
+      "seed": 103,
+      "bitwise": {
+        "history": true,
+        "x": true,
+        "x_prev": true,
+        "z0": true,
+        "lam": true
+      }
+    }
+  ],
+  "component_accounting": "exact mean/sum pass for all 30 ML/hybrid runs",
+  "component_records": [
+    {
+      "run": "ml_S20_seed99",
+      "rows": 18,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S20_seed99",
+      "rows": 18,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S20_seed100",
+      "rows": 21,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S20_seed100",
+      "rows": 21,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S20_seed101",
+      "rows": 22,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S20_seed101",
+      "rows": 22,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S20_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S20_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S20_seed103",
+      "rows": 25,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S20_seed103",
+      "rows": 25,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S50_seed99",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S50_seed99",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S50_seed100",
+      "rows": 22,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S50_seed100",
+      "rows": 22,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S50_seed101",
+      "rows": 15,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S50_seed101",
+      "rows": 15,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S50_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S50_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S50_seed103",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S50_seed103",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S100_seed99",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S100_seed99",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S100_seed100",
+      "rows": 24,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S100_seed100",
+      "rows": 24,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S100_seed101",
+      "rows": 15,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S100_seed101",
+      "rows": 15,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S100_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S100_seed102",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "ml_S100_seed103",
+      "rows": 23,
+      "mean_sum_exact": true
+    },
+    {
+      "run": "hybrid_S100_seed103",
+      "rows": 23,
+      "mean_sum_exact": true
+    }
+  ],
+  "io_retry_count": 10,
+  "io_retry_sets_complete": true
+}

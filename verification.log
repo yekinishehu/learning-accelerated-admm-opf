@@ -1,0 +1,36 @@
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+{
+  "protocol": "strengthened-cold-v1",
+  "protocol_sha256": "cf6aee6e81de097e5e46d771689d3a1bba2bbe69e45cf3d38ecae26f6b40a0e5",
+  "expected_runs": 45,
+  "verified_runs": 45,
+  "instances": 15,
+  "standalone_ml_vs_hybrid_ml": "bitwise pass for all 15 instances",
+  "exact_tail_replay": "bitwise pass for all 15 instances",
+  "source_and_raw_hashes": "pass",
+  "residual_replay": "exact pass",
+  "certificate_replay": "pass",
+  "transient_io_failure_records": [
+    "ml_S100_seed100_FAILURE.json",
+    "ml_S100_seed101_FAILURE.json",
+    "ml_S100_seed102_FAILURE.json",
+    "ml_S100_seed103_FAILURE.json",
+    "ml_S100_seed99_FAILURE.json",
+    "ml_S50_seed100_FAILURE.json",
+    "ml_S50_seed101_FAILURE.json",
+    "ml_S50_seed102_FAILURE.json",
+    "ml_S50_seed103_FAILURE.json",
+    "ml_S50_seed99_FAILURE.json"
+  ]
+}

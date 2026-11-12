@@ -1,0 +1,207 @@
+{
+  "protocol": "strengthened-cold-v1",
+  "protocol_sha256": "cf6aee6e81de097e5e46d771689d3a1bba2bbe69e45cf3d38ecae26f6b40a0e5",
+  "records": [
+    {
+      "run": "ml_S50_seed99",
+      "started_utc": "2026-11-12T16:31:36.328863+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "50",
+        "--seed",
+        "99",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:38.717252+00:00"
+    },
+    {
+      "run": "ml_S50_seed100",
+      "started_utc": "2026-11-12T16:31:38.717522+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "50",
+        "--seed",
+        "100",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:41.634522+00:00"
+    },
+    {
+      "run": "ml_S50_seed101",
+      "started_utc": "2026-11-12T16:31:41.634985+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "50",
+        "--seed",
+        "101",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:43.914109+00:00"
+    },
+    {
+      "run": "ml_S50_seed102",
+      "started_utc": "2026-11-12T16:31:43.914362+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "50",
+        "--seed",
+        "102",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:46.234883+00:00"
+    },
+    {
+      "run": "ml_S50_seed103",
+      "started_utc": "2026-11-12T16:31:46.235270+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "50",
+        "--seed",
+        "103",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:49.399313+00:00"
+    },
+    {
+      "run": "ml_S100_seed99",
+      "started_utc": "2026-11-12T16:31:49.400159+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "100",
+        "--seed",
+        "99",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:53.956275+00:00"
+    },
+    {
+      "run": "ml_S100_seed100",
+      "started_utc": "2026-11-12T16:31:53.956637+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "100",
+        "--seed",
+        "100",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:31:58.957097+00:00"
+    },
+    {
+      "run": "ml_S100_seed101",
+      "started_utc": "2026-11-12T16:31:58.957440+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "100",
+        "--seed",
+        "101",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:32:02.914557+00:00"
+    },
+    {
+      "run": "ml_S100_seed102",
+      "started_utc": "2026-11-12T16:32:02.914841+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "100",
+        "--seed",
+        "102",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:32:08.074799+00:00"
+    },
+    {
+      "run": "ml_S100_seed103",
+      "started_utc": "2026-11-12T16:32:08.075378+00:00",
+      "command": [
+        "run_one.py",
+        "--S",
+        "100",
+        "--seed",
+        "103",
+        "--algo",
+        "ml",
+        "--out",
+        "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+        "--rho",
+        "0.01"
+      ],
+      "reason": "Retry of an I/O-incomplete artifact set; numerical settings unchanged.",
+      "status": "complete",
+      "completed_utc": "2026-11-12T16:32:12.637048+00:00"
+    }
+  ],
+  "finished_utc": "2026-11-12T16:32:12.637353+00:00"
+}

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the associated manuscript and artifact."
+title: "Learning-Accelerated ADMM: Convergence Theory and Application to Stochastic Optimal Power Flow — Reproducibility Artifact"
+type: software
+authors:
+  - family-names: Yao
+    given-names: Yonghong
+  - family-names: Shehu
+    given-names: Yekini
+date-released: 2026-11-13
+version: "1.0.0"
+license: MIT
+notes: "Reproducibility artifact for manuscript ELSCAM-D-26-03479R2; protocol strengthened-cold-v1. Generated data are distributed under CC BY 4.0; third-party case data are separately attributed."

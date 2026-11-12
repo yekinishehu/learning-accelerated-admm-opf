@@ -1,0 +1,8 @@
+{
+  "protocol": "strengthened-cold-v1",
+  "schema_and_finiteness": "pass for all 45 runs",
+  "full_ml_replay": "bitwise pass for all 15 instances",
+  "component_accounting": "exact mean/sum pass for all 30 ML/hybrid runs",
+  "io_retry_count": 10,
+  "io_retry_sets_complete": true
+}

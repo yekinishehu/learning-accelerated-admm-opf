@@ -1,0 +1,18 @@
+{
+  "status": "pass",
+  "training_pairs": 2024,
+  "instances": 30,
+  "scenarios_per_training_instance": 8,
+  "iterations_per_instance": 30,
+  "epochs": 20,
+  "seed0": 1000,
+  "rho": 0.01,
+  "dataset_replay": "bitwise array pass for all 30 shards",
+  "checkpoint_replay": "bitwise tensor pass for weights and normalization arrays",
+  "verification_driver_sha256": "89107e08d0cf30a140019ec3535b3dcd25e35f72b41eb1e5e2242c63b86ce53a",
+  "datagen_sha256": "652b4c7787159d9b26fff845cfd579d0ae921885cac1eca7f1f6a06da4d206e3",
+  "train_sha256": "edb03349bec887d2b5a156ca065216a34f5420b99ff50c16eb3c0c9018d57cc2",
+  "rnn_sha256": "bef43c790063b4e0150de09436322661d40f4318c2e41fff29e3fbea00104e1e",
+  "executed_checkpoint": "code/proxy_clean.pt",
+  "executed_checkpoint_sha256": "97dde541faa931f683fb1c5314850c55c163f13c395746205fc211b2f6ffd40e"
+}
