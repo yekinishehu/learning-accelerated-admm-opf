@@ -1,0 +1,15 @@
+{
+  "status": "first_pass_wall_times_rejected_before_analysis",
+  "reason": "LaTeX compilation and PDF rendering checks overlapped part of the first sequential experiment pass. Although the numerical sources, seeds, settings, and saved trajectories were not changed, exclusive timing conditions were not maintained.",
+  "compile_check_logs_utc": {
+    "build_check": "2026-11-12T11:41:43Z",
+    "build_check2": "2026-11-12T11:43:52Z",
+    "build_check3": "2026-11-12T11:46:40Z"
+  },
+  "affected_scope": "All first-pass wall times are excluded conservatively, rather than selectively retaining apparently unaffected runs.",
+  "correction": "Quarantine the first-pass artifacts and rerun the complete frozen 15-instance, 45-run grid with no compilation, training, visual inspection, or other CPU-intensive work in parallel.",
+  "unchanged_protocol": "strengthened-cold-v1",
+  "result_dependent_tuning": false,
+  "seed_replacement": false,
+  "first_pass_failure_policy": "Original standalone-ML raw-NPZ I/O failure records are retained. Only I/O-incomplete artifacts may be retried, under identical numerical settings."
+}

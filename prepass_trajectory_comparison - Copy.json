@@ -1,0 +1,197 @@
+{
+  "status": "pass",
+  "scope": "All non-timing arrays in every first-pass NPZ that exists; component_times excluded.",
+  "compared_runs": 38,
+  "records": [
+    {
+      "run": "exact_S100_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S100_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S100_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S100_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S100_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S20_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S20_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S20_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S20_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S20_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S50_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S50_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S50_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S50_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "exact_S50_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S100_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S100_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S100_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S100_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S100_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S20_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S20_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S20_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S20_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S20_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S50_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S50_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S50_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S50_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "hybrid_S50_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S20_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S20_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S20_seed102",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S20_seed103",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S20_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S50_seed100",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S50_seed101",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    },
+    {
+      "run": "ml_S50_seed99",
+      "status": "bitwise_pass",
+      "different_arrays": []
+    }
+  ]
+}
