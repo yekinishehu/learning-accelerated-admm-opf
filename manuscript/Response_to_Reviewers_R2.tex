@@ -1,0 +1,117 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb,booktabs,xcolor,hyperref}
+% ===== Begin inlined file: generated/numbers.tex =====
+\newcommand{\NumRunCount}{45}
+\newcommand{\NumInstanceCount}{15}
+\newcommand{\NumCertifiedRunCount}{30}
+\newcommand{\NumHybridOverheadTwenty}{41.42}
+\newcommand{\NumHybridSpeedupFifty}{11.31}
+\newcommand{\NumHybridSpeedupHundred}{17.90}
+\newcommand{\NumHybridSpeedupMin}{-74.16}
+\newcommand{\NumHybridSpeedupMax}{19.87}
+\newcommand{\NumMaxCertifiedAbsGap}{8.089959}
+\newcommand{\NumMaxCertifiedRelGapPct}{0.000346}
+\newcommand{\NumMLResidualMin}{2.282}
+\newcommand{\NumMLResidualMax}{8.181}
+\newcommand{\NumValidationMeanMW}{5.657}
+\expandafter\newcommand\csname NumValidationP90MW\endcsname{9.683}
+\newcommand{\NumOfflineWall}{79.33}
+\newcommand{\NumDatagenWall}{45.66}
+\newcommand{\NumTrainingWall}{33.67}
+\newcommand{\NumWorstInnerResidual}{1.392\times 10^{-6}}
+\newcommand{\NumWorstInnerMu}{1.127\times 10^{-7}}
+\newcommand{\NumWorstInnerIterations}{48}
+\newcommand{\NumMaxDualPrimalSpread}{0.007216}
+\newcommand{\NumMaxPinnedPrimalDualSpread}{0.006737}
+\newcommand{\NumHybridSpeedupMinTwenty}{-74.16}
+\newcommand{\NumHybridSpeedupMaxTwenty}{-25.30}
+\newcommand{\NumHybridSpeedupMedianTwenty}{-41.42}
+\newcommand{\NumHybridFasterCountTwenty}{0}
+\newcommand{\NumHybridSlowerCountTwenty}{5}
+\newcommand{\NumHybridSpeedupMinFifty}{11.31}
+\newcommand{\NumHybridSpeedupMaxFifty}{16.10}
+\newcommand{\NumHybridSpeedupMedianFifty}{14.74}
+\newcommand{\NumHybridFasterCountFifty}{5}
+\newcommand{\NumHybridSlowerCountFifty}{0}
+\newcommand{\NumHybridSpeedupMinHundred}{12.12}
+\newcommand{\NumHybridSpeedupMaxHundred}{19.87}
+\newcommand{\NumHybridSpeedupMedianHundred}{18.06}
+\newcommand{\NumHybridFasterCountHundred}{5}
+\newcommand{\NumHybridSlowerCountHundred}{0}
+\newcommand{\NumIORetryCount}{10}
+% ===== End inlined file: generated/numbers.tex =====
+\newcommand{\Num}[1]{\csname Num#1\endcsname}
+\setlength{\parindent}{0pt}\setlength{\parskip}{6pt}
+\begin{document}
+\begin{center}
+{\Large Response to Reviewers}\\[3pt]
+Manuscript ELSCAM-D-26-03479R2\\
+\emph{Learning-Accelerated ADMM: Convergence Theory and Application to Stochastic Optimal Power Flow}
+\end{center}
+
+We thank both referees. The revision is substantial rather than cosmetic. We removed the unsupported global polyhedral-QP linear-rate theorem, the inexact finite activity-identification theorem, the topology-generalization theorem, and the training-coverage theorem. The learned implementation is now analyzed only through initial-block errors. Full proofs, the FRL dual derivation, the scenario-QP certificate algebra, pinned-recourse elimination, solver diagnostics, and reproducibility gates have been restored or added explicitly. All previous numerical tables, mixed-hardware timings, legacy summaries, and synthetic certificates were discarded. The replacement study contains $\Num{RunCount}$ contention-free cold-solve runs on $\Num{InstanceCount}$ instances, with raw trajectories and independently replayed certificates. Because the manuscript was rewritten extensively, the highlighted copy colors the revision as a whole rather than suggesting that only isolated sentences changed.
+
+\section*{Reviewer 1}
+\subsection*{Comment 1: Global DRS contraction and linear convergence}
+\textbf{Response.} We agree that the earlier global claim was false under the stated assumptions. Example 3.9 in the revised manuscript gives the explicit scalar case in which $T(u)=u$ on a half-line despite strong convexity. Global linear convergence is now proved only when the partial value function is strongly convex and smooth on the entire DRS space $\mathbb R^{Sn}$ (Assumption 3.6, Lemma 3.7, and Theorem 3.8). The proof explicitly notes that this global domain assumption is what permits the reflected-resolvent bound to be applied to every pair of arguments. We removed the global R-linear claim for strongly convex polyhedral QPs and the assertion that finite activity identification extends ``verbatim'' to summably inexact proximal steps. We also do not infer local ball contraction from a residual plot.
+
+\textbf{Location.} Sections 3.3--3.4, especially the counterexample and the precise smooth regime. The abstract, introduction, plateau theorem, and conclusion were rewritten consistently.
+
+\subsection*{Comment 2: FRL frequency and computational cost}
+\textbf{Response.} The new implementation applies FRL to every learned prediction and times it on every iteration. Forward pass, FRL, consensus work, remaining loop overhead, total ML wall time, and certificate time are separate fields in the raw logs. The cost table is generated from those logs. Section 3.1 now also derives the scalar-dual bisection projection and its valid brackets. The old $0.55$ ms and $18{,}167.118$ ms values and all mixed-hardware timing identities were deleted.
+
+\textbf{Location.} Sections 3.1 and 6.3 and Table 4. The ML total is the measured outer wall time; certificate evaluation is not hidden inside or added ambiguously to that total.
+
+\subsection*{Comment 3: Full-scenario convergence and finite-run certification}
+\textbf{Response.} The implemented ML phase forms only $\widehat z_{s,0}^k$, so Theorem 3.2 now states convergence of the DRS state and initial blocks, not of a hypothetical full learned vector. Full recourse convergence is stated only for exact ADMM/the exact tail under strong convexity. Finite termination is evaluated separately by $r^K\le10^{-4}$ and $s^K\le10^{-4}$, a scenario-dual lower bound, and an independently solved pinned-recourse value. The relative-gap denominator is used only when the computed lower bound is strictly positive. Absolute gaps and QP diagnostics are always retained. Appendices A.1--A.2 derive the dual signs and period-zero elimination, including the scenario sum in the common generation cost.
+
+Every exact and hybrid row in the replacement study meets both tolerances. Table 5 now displays the actual $r^K$, $s^K$, absolute gap, relative gap, and worst returned inner-solver residual for all $\Num{CertifiedRunCount}$ exact/hybrid runs, not merely representative rows. Every certificate was independently recomputed from the raw terminal state. The old synthetic certificate was excluded. ADMM-ML is not included in the certified table because it stalls without meeting the certified termination criterion.
+
+\textbf{Location.} Theorems 3.2 and 4.1, Section 4.3, Sections 6.2 and 6.5, Appendices A.1--A.2, and Table 5.
+
+\subsection*{Comment 4: Imprecision after the formulation}
+\textbf{Response.} The general two-stage formulation now states precisely that $X_0$ and each $Z_s$ are nonempty closed convex sets and that each $f_s$ is proper closed convex. The ambiguous prose about ``$\{h_s\le0\}$ being convex'' has been removed; scenario constraints are represented by the convex feasible set $Z_s$, with the explicit DC-OPF constraints given later. The application states the actual elastic DC-OPF solved by the code, including load-shedding and curtailment variables, their bounds, absolute per-scenario penalties, the $10^{-6}$ elastic regularizer, probability-weighted generation cost, ramp windows, and consensus constraints. It explicitly identifies the copper-plate scope and absence of line-flow constraints. Scenario generation is identified as the seeded parametric AR(2) process used in the source, not as a historical ENTSO-E fit.
+
+\textbf{Location.} Section 2.1 and Sections 5.1--5.2.
+
+\section*{Reviewer 2}
+\subsection*{Comment 1: Monitoring summable errors, validation surrogates, and weaker conditions}
+\textbf{Response.} Remark 3.3 now gives a concrete deployment protocol: at selected audit iterations, compute the exact resolvent on a deterministic scenario subset and record the realized initial-block errors; use full audits when the maximum over all scenarios is required. Running plots and cumulative partial sums can reveal stagnation or drift, but neither sampled maxima nor finite partial sums prove summability. Held-out validation error is explicitly restricted to model selection and mean-error diagnostics on the validation distribution; it is not a uniform, out-of-distribution, or summability certificate. The exact-tail hybrid supplies the unconditional guarantee. Weaker conditions are stated only in a contraction/trapping regime: bounded errors yield an ultimate bound and errors tending to zero suffice there; outside that regime no such claim is made.
+
+\textbf{Location.} Remark 3.3 and Theorem 3.5.
+
+\subsection*{Comment 2: Dependence of constants on $S$}
+\textbf{Response.} The scaling error is corrected explicitly. Since
+\[
+\kappa_\rho=(1+\mu/(\rho S))^{-1},
+\]
+holding $\rho S$ constant requires $\rho=\rho_{\rm ref}/S$. We removed the statement that multiplying $\rho$ by $S$ makes the factor $S$-independent. The smooth DRS factor is expressed through $t=\rho S$, while no scenario-independent factor is claimed for the constrained model. The $\sqrt S$ conversion between weighted and maximum residuals is identified separately. For general positive weights we now state $\max_s\|u_s\|\le\pi_{\min}^{-1/2}\|u\|_\pi$ and $\pi_{\min}^{-1/2}\ge\sqrt S$. Hence uniform weights minimize this worst-case conversion factor; nonuniform weighting cannot reduce it below $\sqrt S$ and also changes the objective and resolvent weighting. Weighted residuals and scenario-normalized diagnostics are identified as alternatives that avoid the max-norm conversion, not as claims that all $S$-dependence disappears. We now also distinguish sharp constants from triangle-inequality estimates: $\kappa_\rho$ and the weighted/max conversion are sharp, whereas the operator-error coefficients are not claimed to be sharp. Following the final proof audit, Lemma 3.4 now uses the correct ADMM residual identity $a^{k-1}-b^k=x^{k+1}-z_0^{k+1}$ and its learned counterpart $\widehat a^{k-1}-\widehat b^k$. The dependent residual bounds in Theorems 3.5 and 3.8 have been rederived; no numerical result changed.
+
+\textbf{Location.} Section 3.4 and Lemma 3.4.
+
+\subsection*{Comment 3: Zero-padding, graph alternatives, and bus ordering}
+\textbf{Response.} Zero-padding is now justified only as the simplest parameter-free adapter to the fixed input architecture: it preserves per-bus coordinate semantics and requires no additional learned re-embedding layer. It is explicitly not claimed to be optimal. The revision states the fixed MATPOWER ordering and the shared-label requirement for any zero-padding adapter. It explicitly acknowledges lack of permutation invariance and explains why permutation-equivariant graph models are preferable for changing topology. It now also discusses spectral graph-Laplacian embeddings, including eigenvalue-multiplicity, sign/rotation-alignment, and changing-size limitations, and distinguishes them from spectral normalization of network weights. No untested cross-size or topology-transfer result remains.
+
+\textbf{Location.} Section 5.2, ``Bus ordering and larger networks.''
+
+\subsection*{Comment 4: Notation table}
+\textbf{Response.} Table 1 now distinguishes the exact minimizer $z_s^{k+1}$, optimal recourse vectors $z_s^\star$ and $z_s^\star(x)$, raw network output, restored initial block, realized initial-block error, residuals, DRS state, and certificate quantities. The realized scalar error is written consistently as $\delta^k$. The notation paragraph also states explicitly that no full learned recourse vector is formed.
+
+\textbf{Location.} Table 1 and the notation paragraph in Section 1.
+
+\subsection*{Comment 5: Continued emphasis on exact versus learned updates}
+\textbf{Response.} The abstract, contribution list, algorithm, theorem statements, tables, and conclusion now maintain the distinction. ADMM-ML is labeled an uncertified fixed-proxy heuristic; its measured stall residuals are $\Num{MLResidualMin}$--$\Num{MLResidualMax}$ MW. ADMM-ML-H has exact-tail convergence and finite-run numerical certificates. Algorithm 2 is indexed consistently with Equations (2)--(5): its learned block and multiplier are $\widehat z_{s,0}^{k+1}$ and $\lambda_s^{k+1}$, and its stopping tests use $r^{k+1}$ and $s^{k+1}$. We do not describe the hybrid as uniformly faster. $\Num{HybridSlowerCountTwenty}$ of five $S=20$ hybrids are slower, with signed speedups $\Num{HybridSpeedupMinTwenty}\%$ to $\Num{HybridSpeedupMaxTwenty}\%$. The faster-run counts are $\Num{HybridFasterCountFifty}$ of five at $S=50$ and $\Num{HybridFasterCountHundred}$ of five at $S=100$, with ranges $\Num{HybridSpeedupMinFifty}\%$ to $\Num{HybridSpeedupMaxFifty}\%$ and $\Num{HybridSpeedupMinHundred}\%$ to $\Num{HybridSpeedupMaxHundred}\%$, respectively. Every per-instance value is reported.
+
+\textbf{Location.} Abstract, Sections 1, 3, 4, 6, and 7, Tables 2--3 and 5, and Figure 3.
+
+\section*{Numerical and reproducibility disclosure}
+The final grid is $S\in\{20,50,100\}$ crossed with seeds $99,\ldots,103$ and ADMM, ADMM-ML, and ADMM-ML-H: $\Num{InstanceCount}$ instances and $\Num{RunCount}$ runs. All use cold scenario solves and $\rho=0.01$. The previous $S=500$ results are not preserved. The completed $S=100$ runs are included; no claim is made above $S=100$, and five paired seeds per scenario count are descriptive rather than confirmatory evidence.
+
+The final timing grid was freshly executed without parallel compilation, training, or visual inspection. No legacy timing was mixed into the replacement study. $\Num{IORetryCount}$ standalone ML attempts that completed the numerical work but encountered raw-NPZ visibility failures were rerun with identical numerical settings and stable-copy I/O handling. All failure records are retained. No seed or parameter was changed.
+
+The public repository at \url{https://github.com/yekinishehu/learning-accelerated-admm-opf} contains raw NPZ trajectories and terminal states, JSON summaries, per-run source/config hashes, certificate arrays, training shards, the regenerated checkpoint, analysis scripts, verification outputs, reproduction commands, and SHA-256 checksum manifests. The checks include bitwise standalone/hybrid ML identity for all 15 instances, bitwise full-ML replay from the checkpoint for all 15 instances, bitwise exact-tail replay for all 15 instances, exact residual recomputation, independent certificate evaluation for all 45 runs, and bitwise replay of all training shards and checkpoint tensors. The maximum exact/hybrid absolute gap is $\Num{MaxCertifiedAbsGap}$ and the maximum relative gap is $\Num{MaxCertifiedRelGapPct}\%$; small values are printed in scientific notation rather than hidden as ``0.00\%''. The worst returned inner-IPM residual, $\Num{WorstInnerResidual}$, and worst complementarity measure, $\Num{WorstInnerMu}$, are also disclosed.
+
+These changes address the substance of the nine comments within the explicitly stated theoretical and numerical scope. We have not treated agreement in this response letter as evidence: claims that could not be proved or regenerated were removed, and mixed timing and solver outcomes remain visible.
+
+\end{document}
