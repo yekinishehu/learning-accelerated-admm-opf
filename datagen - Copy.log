@@ -1,0 +1,38 @@
+inst 0: 1s pairs=56
+inst 1: 1s pairs=56
+inst 2: 2s pairs=80
+/mnt/agents/.admm_rebuild/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/.admm_rebuild/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/.admm_rebuild/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+inst 3: 1s pairs=64
+inst 4: 1s pairs=56
+inst 5: 1s pairs=64
+inst 6: 2s pairs=96
+inst 7: 1s pairs=56
+inst 8: 1s pairs=56
+inst 9: 1s pairs=56
+inst 10: 2s pairs=64
+inst 11: 2s pairs=72
+inst 12: 1s pairs=64
+inst 13: 2s pairs=72
+inst 14: 2s pairs=88
+inst 15: 2s pairs=80
+inst 16: 1s pairs=64
+inst 17: 2s pairs=64
+inst 18: 1s pairs=64
+inst 19: 2s pairs=72
+inst 20: 1s pairs=48
+inst 21: 2s pairs=72
+inst 22: 2s pairs=88
+inst 23: 1s pairs=64
+inst 24: 1s pairs=56
+inst 25: 2s pairs=88
+inst 26: 2s pairs=56
+inst 27: 1s pairs=48
+inst 28: 2s pairs=72
+inst 29: 2s pairs=88
+DONE
+WALL_SECONDS 45.65799554299974

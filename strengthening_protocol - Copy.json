@@ -1,0 +1,49 @@
+{
+  "protocol_version": "strengthened-cold-v1",
+  "frozen_before_new_runs_utc": "2026-11-12T11:11:26Z",
+  "relationship_to_final_cold_v1": "All numerical, algorithmic, model, training, and stopping settings are unchanged. Only the evaluation instance grid is expanded.",
+  "calibration": {
+    "performed": false,
+    "reason": "No protocol adjustment is made. Existing verified parameters are retained to avoid result-dependent tuning."
+  },
+  "scenario_counts": [20, 50, 100],
+  "seeds": [99, 100, 101, 102, 103],
+  "algorithms": ["exact", "ml", "hybrid"],
+  "expected_instance_count": 15,
+  "expected_run_count": 45,
+  "existing_verified_instances_retained": [
+    {"S": 20, "seed": 99},
+    {"S": 50, "seed": 99},
+    {"S": 50, "seed": 100},
+    {"S": 50, "seed": 101}
+  ],
+  "new_instances": [
+    {"S": 20, "seed": 100}, {"S": 20, "seed": 101},
+    {"S": 20, "seed": 102}, {"S": 20, "seed": 103},
+    {"S": 50, "seed": 102}, {"S": 50, "seed": 103},
+    {"S": 100, "seed": 99}, {"S": 100, "seed": 100},
+    {"S": 100, "seed": 101}, {"S": 100, "seed": 102},
+    {"S": 100, "seed": 103}
+  ],
+  "unchanged_settings": {
+    "rho": 0.01,
+    "admm_epsilon_r": 0.0001,
+    "admm_epsilon_s": 0.0001,
+    "max_exact_iterations": 2000,
+    "scenario_solver_start": "cold at every iteration",
+    "inner_qp_requested_tol_mu": 1e-11,
+    "inner_qp_requested_tol_res": 1e-9,
+    "inner_qp_max_iterations": 100,
+    "learned_theta": 0.01,
+    "learned_tau": 5,
+    "learned_K_budget": 100,
+    "frl_bisection_steps": 100
+  },
+  "analysis_frozen_before_results": {
+    "timing": "Report every exact/hybrid pair, per-instance speedup with sign, and median/range summaries by scenario count. Negative speedups remain visible.",
+    "accuracy": "Require both ADMM residual tolerances for every exact/hybrid run. Report terminal residuals, absolute and relative gaps, and all solver diagnostics. Fixed-proxy ML runs remain uncertified.",
+    "statistics": "Five paired instances per scenario count are descriptive evidence, not a confirmatory significance study. No selective seed exclusion.",
+    "failure_policy": "A failed or nonconverged run remains in the manifest and is reported; it is not replaced by a more favorable seed."
+  },
+  "scope_limit": "S=100 is the largest added scenario count. No claim is made about S>100 or historical-data calibration."
+}

@@ -1,0 +1,24 @@
+{
+  "run": "ml_S100_seed103",
+  "command": [
+    "/usr/local/bin/python3",
+    "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py",
+    "--child",
+    "--",
+    "--S",
+    "100",
+    "--seed",
+    "103",
+    "--algo",
+    "ml",
+    "--out",
+    "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+    "--rho",
+    "0.01"
+  ],
+  "started_utc": "2026-11-12T16:27:34.700286+00:00",
+  "returncode": 1,
+  "complete": false,
+  "finished_utc": "2026-11-12T16:27:38.961807+00:00",
+  "policy": "Retained; no seed replacement or parameter tuning."
+}

@@ -1,0 +1,46 @@
+{
+  "run": "ml_S100_seed103",
+  "created_utc": "2026-11-12T16:32:12.229157+00:00",
+  "command": "run_one.py --S 100 --seed 103 --algo ml --out /mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs --rho 0.01",
+  "config": {
+    "S": 100,
+    "seed": 103,
+    "algo": "ml",
+    "out": "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs",
+    "rho": 0.01,
+    "max_ml": 100,
+    "warm": false
+  },
+  "environment": {
+    "python": "3.12.12 (main, Oct  9 2025, 22:40:06) [GCC 12.2.0]",
+    "platform": "Linux-6.18.44-x86_64-with-glibc2.36",
+    "numpy": "2.2.5",
+    "torch": "2.8.0+cu128",
+    "cpu_count": 2,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1"
+    }
+  },
+  "source_sha256": {
+    "admm.py": "7c062627f84c29d3b2dd6cde89786c0c16cc811221f018c57ed162845fc77d76",
+    "analyze_results.py": "6918b1fd598b7c8cf51b13360e4fdad244d741e11b45c7f1ef9f13c272ef7639",
+    "case118_bus.m": "9cf52b4585d801fb1cde5c9eba6efbaa09b0556a96e12e6cb788af31b4452cd0",
+    "case118_gen.m": "f8604b819db3d4c9567147e9b354e88e1d3372e13ecb04a2ea23932c61e30004",
+    "certificates.py": "435b904f093395f21f1942a545f03f74ba81f409ecc256c2dfbe3d435dbabd84",
+    "data.py": "1cee62cfa34d6426488263bc9b68a0c405aeb7f3f1f66562df9ce9348b56d00f",
+    "datagen.py": "652b4c7787159d9b26fff845cfd579d0ae921885cac1eca7f1f6a06da4d206e3",
+    "proxy_clean.pt": "97dde541faa931f683fb1c5314850c55c163f13c395746205fc211b2f6ffd40e",
+    "proxy_r2.pt": "90119d17110e246bd7ff99fd17819f080c31e02ad8e3143b078777e1dfdc2acd",
+    "qp_ipm.py": "d0139b44b90f0b6951c9b6c6be267326a6e118002c0d1bf74fec3b0d64777c8b",
+    "rnn.py": "bef43c790063b4e0150de09436322661d40f4318c2e41fff29e3fbea00104e1e",
+    "run_one.py": "520499759a35b90fe5aec798884c465e5649709af2d119c0606b63f997be3133",
+    "train.py": "edb03349bec887d2b5a156ca065216a34f5420b99ff50c16eb3c0c9018d57cc2",
+    "verify_final.py": "c48d2d4676f229f6269e4e07fa5308f7f1fe7986fd2a54f41f40b9031c49885d",
+    "verify_results.py": "688e350c7aee73eea5d5ae0a578f8707c0ed046b4d96ae6d67d2c5bdfcbfd97a"
+  },
+  "raw_npz_sha256": "24ddda372aa05b356f297e33fb999e79848827933e608bb5613f49a4fc344536",
+  "summary_sha256": "2d1284e5a8121845208d80432ed4db2f3c802c5adb759482c3895e1bd969b0ed",
+  "certificate_scope": "Floating-point scenario dual lower bound and independently solved pinned-recourse upper value; solver diagnostics included."
+}

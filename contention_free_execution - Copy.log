@@ -1,0 +1,4369 @@
+CLEAN_START exact_S20_seed99 2026-11-12T15:34:35.573534+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.712e+02 s=1.313e-15
+    admm k=   2 r=5.082e+01 s=2.283e+00
+    admm k=   3 r=2.316e+01 s=2.900e-01
+    admm k=  10 r=1.009e+00 s=1.190e-02
+    admm k=  20 r=4.467e-02 s=2.148e-03
+    admm k=  30 r=1.501e-02 s=4.219e-04
+    admm k=  40 r=8.463e-03 s=8.392e-05
+    admm k=  50 r=5.380e-03 s=1.678e-05
+    admm k=  60 r=3.466e-03 s=3.364e-06
+    admm k=  70 r=2.236e-03 s=6.755e-07
+    admm k=  80 r=1.443e-03 s=1.357e-07
+    admm k=  90 r=9.307e-04 s=2.728e-08
+    admm k= 100 r=6.005e-04 s=5.485e-09
+    admm k= 110 r=3.874e-04 s=1.103e-09
+    admm k= 120 r=2.499e-04 s=2.218e-10
+    admm k= 130 r=1.613e-04 s=4.461e-11
+    admm k= 140 r=1.040e-04 s=8.973e-12
+SUMMARY {
+  "S": 20,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 141,
+  "iterations_total": 141,
+  "r_terminal": 9.957360478677217e-05,
+  "s_terminal": 7.643439686949464e-12,
+  "algorithm_wall_measured": 38.39619052600028,
+  "algorithm_wall_function": 38.396117416999914,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 1.3919068369006027e-06,
+    "mu": 7.970140321879313e-10,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2259154.7584823887,
+    "q_scenario_primal_plus_first_stage": 2259154.7598737357,
+    "q_primal_dual_spread": 0.0013913470320403576,
+    "V_pinned": 2259154.7598537877,
+    "V_pinned_dual_lower": 2259154.758517683,
+    "V_primal_dual_spread": 0.0013361047022044659,
+    "absolute_gap": 0.0013713990338146687,
+    "relative_gap": 6.070407654303066e-10,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14786.524314879678,
+    "dual_scenario_min_margin": 6.893504178151488e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 7.275957614183426e-12,
+      "mu": 7.603178630071588e-12
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 6.366462912410498e-12,
+      "mu": 3.5439343129362846e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 6.366462912410498e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5380743820005591
+  }
+}
+CLEAN_DONE exact_S20_seed99
+CLEAN_START ml_S20_seed99 2026-11-12T15:35:17.351277+00:00
+    ml k=  1 r=2.713e+02 s=1.313e-15
+    ml k=  2 r=3.723e+02 s=2.767e+00
+    ml k=  3 r=3.192e+02 s=3.727e+00
+    ml k=  4 r=9.204e+01 s=4.020e+00
+    ml k=  5 r=4.071e+01 s=7.435e-01
+    ml k=  6 r=2.082e+01 s=4.364e-01
+    ml k=  7 r=8.611e+00 s=2.454e-01
+    ml k=  8 r=5.867e+00 s=1.195e-01
+    ml k=  9 r=3.834e+00 s=5.874e-02
+    ml k= 10 r=3.373e+00 s=4.242e-02
+    ml k= 11 r=2.430e+00 s=1.743e-02
+    ml k= 12 r=2.456e+00 s=1.861e-02
+    ml k= 13 r=2.282e+00 s=3.015e-03
+    ml k= 14 r=2.306e+00 s=1.077e-02
+    ml k= 15 r=2.608e+00 s=4.580e-03
+    ml k= 16 r=2.749e+00 s=9.610e-03
+    ml k= 17 r=2.563e+00 s=8.235e-03
+    ml k= 18 r=2.282e+00 s=1.489e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 20,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 18,
+  "K_tail": 0,
+  "iterations_total": 18,
+  "r_terminal": 2.2821564190268386,
+  "s_terminal": 0.014887727440006469,
+  "algorithm_wall_measured": 0.11788085300031526,
+  "algorithm_wall_function": 0.11778168399996503,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.004705075889028699,
+    0.0014720167777745195,
+    0.00020607411099465226
+  ],
+  "ml_component_sum_seconds": [
+    0.08469136600251659,
+    0.026496301999941352,
+    0.003709333997903741
+  ],
+  "ml_other_seconds": 0.0028846819996033446,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2258642.8314979454,
+    "q_scenario_primal_plus_first_stage": 2258642.8371508424,
+    "q_primal_dual_spread": 0.00565289705991745,
+    "V_pinned": 2328059.7930729524,
+    "V_pinned_dual_lower": 2328059.7917368463,
+    "V_primal_dual_spread": 0.0013361060991883278,
+    "absolute_gap": 69416.96157500707,
+    "relative_gap": 0.030733925969591805,
+    "relative_gap_valid": true,
+    "first_stage_inf": 18692.54041432446,
+    "dual_scenario_min_margin": 6.99337397236377e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 1.2244674807426748e-06,
+      "mu": 4.3162026429770424e-08
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 5.4569682106375694e-12,
+      "mu": 1.7595090892721407e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 1.4551915228366852e-11,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 5.4569682106375694e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5739946650001002
+  }
+}
+CLEAN_DONE ml_S20_seed99
+CLEAN_START hybrid_S20_seed99 2026-11-12T15:35:19.608952+00:00
+    ml k=  1 r=2.713e+02 s=1.313e-15
+    ml k=  2 r=3.723e+02 s=2.767e+00
+    ml k=  3 r=3.192e+02 s=3.727e+00
+    ml k=  4 r=9.204e+01 s=4.020e+00
+    ml k=  5 r=4.071e+01 s=7.435e-01
+    ml k=  6 r=2.082e+01 s=4.364e-01
+    ml k=  7 r=8.611e+00 s=2.454e-01
+    ml k=  8 r=5.867e+00 s=1.195e-01
+    ml k=  9 r=3.834e+00 s=5.874e-02
+    ml k= 10 r=3.373e+00 s=4.242e-02
+    ml k= 11 r=2.430e+00 s=1.743e-02
+    ml k= 12 r=2.456e+00 s=1.861e-02
+    ml k= 13 r=2.282e+00 s=3.015e-03
+    ml k= 14 r=2.306e+00 s=1.077e-02
+    ml k= 15 r=2.608e+00 s=4.580e-03
+    ml k= 16 r=2.749e+00 s=9.610e-03
+    ml k= 17 r=2.563e+00 s=8.235e-03
+    ml k= 18 r=2.282e+00 s=1.489e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=4.697e+01 s=1.120e-02
+    admm k=   2 r=2.464e+01 s=3.580e-01
+    admm k=   3 r=4.936e+00 s=2.468e-01
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=  10 r=1.691e-01 s=3.177e-03
+    admm k=  20 r=9.598e-02 s=5.818e-04
+    admm k=  30 r=6.157e-02 s=1.116e-04
+    admm k=  40 r=3.964e-02 s=2.345e-05
+    admm k=  50 r=2.565e-02 s=4.326e-06
+    admm k=  60 r=1.656e-02 s=8.676e-07
+    admm k=  70 r=1.069e-02 s=1.870e-07
+    admm k=  80 r=6.905e-03 s=4.531e-08
+    admm k=  90 r=4.439e-03 s=1.311e-06
+    admm k= 100 r=2.879e-03 s=1.380e-08
+    admm k= 110 r=1.859e-03 s=1.194e-08
+    admm k= 120 r=1.201e-03 s=7.054e-09
+    admm k= 130 r=8.071e-04 s=5.781e-07
+    admm k= 140 r=5.724e-04 s=4.399e-09
+    admm k= 150 r=4.229e-04 s=3.422e-09
+    admm k= 160 r=3.309e-04 s=3.206e-09
+    admm k= 170 r=2.674e-04 s=2.205e-09
+    admm k= 180 r=2.251e-04 s=1.781e-09
+SUMMARY {
+  "S": 20,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 18,
+  "K_tail": 189,
+  "iterations_total": 207,
+  "r_terminal": 8.044510350592728e-05,
+  "s_terminal": 1.5207855111042852e-09,
+  "algorithm_wall_measured": 54.30076270900008,
+  "algorithm_wall_function": 54.300604759000635,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.0038593716665976294,
+    0.001462347444430634,
+    0.00017879622232107472
+  ],
+  "ml_component_sum_seconds": [
+    0.06946868999875733,
+    0.02632225399975141,
+    0.003218332001779345
+  ],
+  "ml_other_seconds": 0.0022422629999709898,
+  "inner_qp_worst": {
+    "res": 2.2635519458802378e-08,
+    "mu": 6.047546346963319e-10,
+    "iters": 42
+  },
+  "certificate": {
+    "p_low": 2259154.7581853643,
+    "q_scenario_primal_plus_first_stage": 2259154.7595759816,
+    "q_primal_dual_spread": 0.0013906173408031464,
+    "V_pinned": 2259162.050161717,
+    "V_pinned_dual_lower": 2259162.0488256314,
+    "V_primal_dual_spread": 0.0013360856100916862,
+    "absolute_gap": 7.291976352687925,
+    "relative_gap": 3.2277453885209294e-06,
+    "relative_gap_valid": true,
+    "first_stage_inf": 15714.539447486277,
+    "dual_scenario_min_margin": 6.8937151809223e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 9.934699729541308e-10,
+      "mu": 1.8574968441863816e-13
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 6.366462912410498e-12,
+      "mu": 1.5498682959526001e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 6.366462912410498e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 6.366462912410498e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5246672809998927
+  }
+}
+CLEAN_DONE hybrid_S20_seed99
+CLEAN_START exact_S20_seed100 2026-11-12T15:36:15.805198+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.709e+02 s=1.402e-15
+    admm k=   2 r=5.301e+01 s=2.337e+00
+    admm k=   3 r=2.812e+01 s=2.622e-01
+    admm k=  10 r=3.785e-01 s=1.974e-02
+    admm k=  20 r=5.702e-02 s=2.731e-03
+    admm k=  30 r=1.589e-02 s=5.129e-04
+    admm k=  40 r=8.398e-03 s=1.004e-04
+    admm k=  50 r=5.300e-03 s=1.998e-05
+    admm k=  60 r=3.412e-03 s=4.003e-06
+    admm k=  70 r=2.201e-03 s=8.039e-07
+    admm k=  80 r=1.420e-03 s=1.616e-07
+    admm k=  90 r=9.162e-04 s=3.249e-08
+    admm k= 100 r=5.911e-04 s=6.534e-09
+    admm k= 110 r=3.814e-04 s=1.314e-09
+    admm k= 120 r=2.460e-04 s=2.643e-10
+    admm k= 130 r=1.587e-04 s=5.317e-11
+    admm k= 140 r=1.024e-04 s=1.070e-11
+SUMMARY {
+  "S": 20,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 141,
+  "iterations_total": 141,
+  "r_terminal": 9.802166964948575e-05,
+  "s_terminal": 9.110085594500347e-12,
+  "algorithm_wall_measured": 38.23149865199957,
+  "algorithm_wall_function": 38.231430712000474,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 3.289958814267635e-07,
+    "mu": 8.2646889430976e-09,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2373734.1696471227,
+    "q_scenario_primal_plus_first_stage": 2373734.171044116,
+    "q_primal_dual_spread": 0.001396993175148964,
+    "V_pinned": 2373734.171029305,
+    "V_pinned_dual_lower": 2373734.169685346,
+    "V_primal_dual_spread": 0.0013439590111374855,
+    "absolute_gap": 0.001382182352244854,
+    "relative_gap": 5.822818620209389e-10,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14160.571737641203,
+    "dual_scenario_min_margin": 6.912463868502527e-05,
+    "dual_solver_info": {
+      "iters": 42,
+      "res": 7.275957614183426e-12,
+      "mu": 5.810239113122197e-13
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 8.185452315956354e-12,
+      "mu": 1.7518926203993352e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5419384160004483
+  }
+}
+CLEAN_DONE exact_S20_seed100
+CLEAN_START ml_S20_seed100 2026-11-12T15:36:55.938461+00:00
+    ml k=  1 r=2.844e+02 s=1.402e-15
+    ml k=  2 r=3.977e+02 s=2.854e+00
+    ml k=  3 r=3.295e+02 s=3.980e+00
+    ml k=  4 r=9.521e+01 s=4.111e+00
+    ml k=  5 r=2.800e+01 s=8.538e-01
+    ml k=  6 r=1.486e+01 s=3.111e-01
+    ml k=  7 r=9.093e+00 s=1.598e-01
+    ml k=  8 r=7.322e+00 s=1.016e-01
+    ml k=  9 r=6.400e+00 s=5.233e-02
+    ml k= 10 r=6.128e+00 s=5.146e-02
+    ml k= 11 r=6.352e+00 s=1.990e-02
+    ml k= 12 r=7.185e+00 s=3.097e-02
+    ml k= 13 r=4.598e+00 s=4.364e-02
+    ml k= 14 r=3.248e+00 s=5.285e-02
+    ml k= 15 r=3.835e+00 s=1.717e-02
+    ml k= 16 r=2.383e+00 s=9.914e-03
+    ml k= 17 r=2.451e+00 s=1.079e-02
+    ml k= 18 r=2.615e+00 s=1.465e-02
+    ml k= 19 r=3.035e+00 s=1.247e-02
+    ml k= 20 r=2.802e+00 s=9.331e-03
+    ml k= 21 r=3.264e+00 s=4.092e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 20,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 21,
+  "K_tail": 0,
+  "iterations_total": 21,
+  "r_terminal": 3.2635024759760216,
+  "s_terminal": 0.004092065176717523,
+  "algorithm_wall_measured": 0.11610670199934248,
+  "algorithm_wall_function": 0.11601883300045301,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.003763163476270122,
+    0.0014602999522789365,
+    0.0001866831428612516
+  ],
+  "ml_component_sum_seconds": [
+    0.07902643300167256,
+    0.030666298997857666,
+    0.003920346000086283
+  ],
+  "ml_other_seconds": 0.002405755000836507,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2373451.286274846,
+    "q_scenario_primal_plus_first_stage": 2373451.2892526244,
+    "q_primal_dual_spread": 0.0029777782037854195,
+    "V_pinned": 7381504.705533574,
+    "V_pinned_dual_lower": 7381504.70418246,
+    "V_primal_dual_spread": 0.0013511143624782562,
+    "absolute_gap": 5008053.419258729,
+    "relative_gap": 2.1100300007079205,
+    "relative_gap_valid": true,
+    "first_stage_inf": 17320.57507821943,
+    "dual_scenario_min_margin": 6.967992521822453e-05,
+    "dual_solver_info": {
+      "iters": 42,
+      "res": 3.9761780312730366e-08,
+      "mu": 1.5948639685748295e-08
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 9.094947017729282e-12,
+      "mu": 9.244283272601419e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 1.2278178473934531e-11,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 9.094947017729282e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5699089009995078
+  }
+}
+CLEAN_DONE ml_S20_seed100
+CLEAN_START hybrid_S20_seed100 2026-11-12T15:36:57.995236+00:00
+    ml k=  1 r=2.844e+02 s=1.402e-15
+    ml k=  2 r=3.977e+02 s=2.854e+00
+    ml k=  3 r=3.295e+02 s=3.980e+00
+    ml k=  4 r=9.521e+01 s=4.111e+00
+    ml k=  5 r=2.800e+01 s=8.538e-01
+    ml k=  6 r=1.486e+01 s=3.111e-01
+    ml k=  7 r=9.093e+00 s=1.598e-01
+    ml k=  8 r=7.322e+00 s=1.016e-01
+    ml k=  9 r=6.400e+00 s=5.233e-02
+    ml k= 10 r=6.128e+00 s=5.146e-02
+    ml k= 11 r=6.352e+00 s=1.990e-02
+    ml k= 12 r=7.185e+00 s=3.097e-02
+    ml k= 13 r=4.598e+00 s=4.364e-02
+    ml k= 14 r=3.248e+00 s=5.285e-02
+    ml k= 15 r=3.835e+00 s=1.717e-02
+    ml k= 16 r=2.383e+00 s=9.914e-03
+    ml k= 17 r=2.451e+00 s=1.079e-02
+    ml k= 18 r=2.615e+00 s=1.465e-02
+    ml k= 19 r=3.035e+00 s=1.247e-02
+    ml k= 20 r=2.802e+00 s=9.331e-03
+    ml k= 21 r=3.264e+00 s=4.092e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=3.326e+01 s=1.293e-03
+    admm k=   2 r=9.319e+00 s=9.411e-02
+    admm k=   3 r=4.309e+00 s=1.072e-01
+    admm k=  10 r=1.808e-01 s=4.758e-03
+    admm k=  20 r=9.049e-02 s=8.261e-04
+    admm k=  30 r=5.752e-02 s=1.560e-04
+    admm k=  40 r=3.707e-02 s=3.050e-05
+    admm k=  50 r=2.391e-02 s=6.051e-06
+    admm k=  60 r=1.543e-02 s=1.208e-06
+    admm k=  70 r=9.952e-03 s=2.415e-07
+    admm k=  80 r=6.420e-03 s=4.804e-08
+    admm k=  90 r=4.148e-03 s=2.349e-07
+    admm k= 100 r=2.740e-03 s=1.348e-08
+    admm k= 110 r=1.767e-03 s=1.665e-09
+    admm k= 120 r=1.140e-03 s=2.945e-10
+    admm k= 130 r=7.372e-04 s=5.488e-11
+    admm k= 140 r=4.781e-04 s=2.109e-11
+    admm k= 150 r=3.120e-04 s=4.192e-11
+    admm k= 160 r=2.062e-04 s=5.290e-11
+    admm k= 170 r=1.396e-04 s=5.646e-11
+    admm k= 180 r=9.842e-05 s=5.582e-11
+SUMMARY {
+  "S": 20,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 21,
+  "K_tail": 180,
+  "iterations_total": 201,
+  "r_terminal": 9.84153863617377e-05,
+  "s_terminal": 5.582334396464247e-11,
+  "algorithm_wall_measured": 50.28486764900026,
+  "algorithm_wall_function": 50.28466497900081,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.0037238585238724012,
+    0.0014670055712659156,
+    0.00018598823819394013
+  ],
+  "ml_component_sum_seconds": [
+    0.07820102900132042,
+    0.030807116996584227,
+    0.0039057530020727427
+  ],
+  "ml_other_seconds": 0.002158693000637868,
+  "inner_qp_worst": {
+    "res": 4.345864268451294e-08,
+    "mu": 8.912968439525092e-09,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2373734.1696470366,
+    "q_scenario_primal_plus_first_stage": 2373734.1710440423,
+    "q_primal_dual_spread": 0.0013970057480037212,
+    "V_pinned": 2373734.68105616,
+    "V_pinned_dual_lower": 2373734.6797032855,
+    "V_primal_dual_spread": 0.0013528745621442795,
+    "absolute_gap": 0.5114091234281659,
+    "relative_gap": 2.1544498536001196e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14908.351180885758,
+    "dual_scenario_min_margin": 6.912490061949939e-05,
+    "dual_solver_info": {
+      "iters": 42,
+      "res": 8.669620576995385e-11,
+      "mu": 7.137918306027157e-13
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 7.275957614183426e-12,
+      "mu": 1.0997196154287455e-10
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5655103769995549
+  }
+}
+CLEAN_DONE hybrid_S20_seed100
+CLEAN_START exact_S20_seed101 2026-11-12T15:37:50.269808+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.706e+02 s=1.350e-15
+    admm k=   2 r=5.222e+01 s=2.323e+00
+    admm k=   3 r=2.733e+01 s=2.616e-01
+    admm k=  10 r=4.763e-01 s=1.727e-02
+    admm k=  20 r=5.364e-02 s=2.557e-03
+    admm k=  30 r=1.636e-02 s=4.870e-04
+    admm k=  40 r=8.990e-03 s=9.586e-05
+    admm k=  50 r=5.701e-03 s=1.911e-05
+    admm k=  60 r=3.672e-03 s=3.831e-06
+    admm k=  70 r=2.369e-03 s=7.694e-07
+    admm k=  80 r=1.528e-03 s=1.546e-07
+    admm k=  90 r=9.859e-04 s=3.109e-08
+    admm k= 100 r=6.360e-04 s=6.253e-09
+    admm k= 110 r=4.104e-04 s=1.258e-09
+    admm k= 120 r=2.647e-04 s=2.530e-10
+    admm k= 130 r=1.708e-04 s=5.088e-11
+    admm k= 140 r=1.102e-04 s=1.023e-11
+SUMMARY {
+  "S": 20,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 143,
+  "iterations_total": 143,
+  "r_terminal": 9.662230957408026e-05,
+  "s_terminal": 6.3256103134095436e-12,
+  "algorithm_wall_measured": 38.99430209300044,
+  "algorithm_wall_function": 38.994208512000114,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 4.011024090644355e-08,
+    "mu": 8.549262847055185e-10,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2336832.779475214,
+    "q_scenario_primal_plus_first_stage": 2336832.780870104,
+    "q_primal_dual_spread": 0.0013948902487754822,
+    "V_pinned": 2336832.780850612,
+    "V_pinned_dual_lower": 2336832.7795103947,
+    "V_primal_dual_spread": 0.0013402174226939678,
+    "absolute_gap": 0.0013753981329500675,
+    "relative_gap": 5.88573621968339e-10,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14243.860773833949,
+    "dual_scenario_min_margin": 6.901963206473738e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 8.185452315956354e-12,
+      "mu": 7.83319402250701e-13
+    },
+    "pinned_solver_info": {
+      "iters": 44,
+      "res": 6.366462912410498e-12,
+      "mu": 2.7373188226530913e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 6.366462912410498e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5423287069997969
+  }
+}
+CLEAN_DONE exact_S20_seed101
+CLEAN_START ml_S20_seed101 2026-11-12T15:38:31.226059+00:00
+    ml k=  1 r=2.816e+02 s=1.350e-15
+    ml k=  2 r=3.895e+02 s=2.826e+00
+    ml k=  3 r=3.286e+02 s=3.899e+00
+    ml k=  4 r=9.615e+01 s=4.118e+00
+    ml k=  5 r=2.696e+01 s=8.589e-01
+    ml k=  6 r=1.452e+01 s=2.949e-01
+    ml k=  7 r=8.583e+00 s=1.494e-01
+    ml k=  8 r=7.499e+00 s=9.412e-02
+    ml k=  9 r=6.028e+00 s=4.771e-02
+    ml k= 10 r=6.167e+00 s=4.719e-02
+    ml k= 11 r=5.928e+00 s=1.742e-02
+    ml k= 12 r=6.562e+00 s=2.831e-02
+    ml k= 13 r=5.718e+00 s=2.589e-02
+    ml k= 14 r=4.151e+00 s=5.843e-02
+    ml k= 15 r=5.455e+00 s=3.614e-02
+    ml k= 16 r=3.191e+00 s=1.585e-02
+    ml k= 17 r=2.795e+00 s=1.107e-02
+    ml k= 18 r=3.030e+00 s=1.473e-02
+    ml k= 19 r=3.128e+00 s=1.209e-02
+    ml k= 20 r=3.185e+00 s=8.555e-03
+    ml k= 21 r=3.729e+00 s=4.746e-03
+    ml k= 22 r=3.772e+00 s=8.167e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 20,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 22,
+  "K_tail": 0,
+  "iterations_total": 22,
+  "r_terminal": 3.771897432115423,
+  "s_terminal": 0.0008166990955353886,
+  "algorithm_wall_measured": 0.12173238699961075,
+  "algorithm_wall_function": 0.1215831760000583,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.003738267272803403,
+    0.0014599063182355496,
+    0.0001879944545015116
+  ],
+  "ml_component_sum_seconds": [
+    0.08224188000167487,
+    0.032117939001182094,
+    0.004135877999033255
+  ],
+  "ml_other_seconds": 0.0030874789981680806,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2336542.6335295527,
+    "q_scenario_primal_plus_first_stage": 2336542.6352259866,
+    "q_primal_dual_spread": 0.0016964338719844818,
+    "V_pinned": 4376871.26808369,
+    "V_pinned_dual_lower": 4376871.266743528,
+    "V_primal_dual_spread": 0.0013401620090007782,
+    "absolute_gap": 2040328.634554137,
+    "relative_gap": 0.8732255107504893,
+    "relative_gap_valid": true,
+    "first_stage_inf": 17319.602732500403,
+    "dual_scenario_min_margin": 6.909997318871319e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 2.0036826375857686e-07,
+      "mu": 3.2002239826766625e-09
+    },
+    "pinned_solver_info": {
+      "iters": 40,
+      "res": 9.094947017729282e-12,
+      "mu": 1.5018777287423856e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 9.094947017729282e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5488809130001755
+  }
+}
+CLEAN_DONE ml_S20_seed101
+CLEAN_START hybrid_S20_seed101 2026-11-12T15:38:33.366309+00:00
+    ml k=  1 r=2.816e+02 s=1.350e-15
+    ml k=  2 r=3.895e+02 s=2.826e+00
+    ml k=  3 r=3.286e+02 s=3.899e+00
+    ml k=  4 r=9.615e+01 s=4.118e+00
+    ml k=  5 r=2.696e+01 s=8.589e-01
+    ml k=  6 r=1.452e+01 s=2.949e-01
+    ml k=  7 r=8.583e+00 s=1.494e-01
+    ml k=  8 r=7.499e+00 s=9.412e-02
+    ml k=  9 r=6.028e+00 s=4.771e-02
+    ml k= 10 r=6.167e+00 s=4.719e-02
+    ml k= 11 r=5.928e+00 s=1.742e-02
+    ml k= 12 r=6.562e+00 s=2.831e-02
+    ml k= 13 r=5.718e+00 s=2.589e-02
+    ml k= 14 r=4.151e+00 s=5.843e-02
+    ml k= 15 r=5.455e+00 s=3.614e-02
+    ml k= 16 r=3.191e+00 s=1.585e-02
+    ml k= 17 r=2.795e+00 s=1.107e-02
+    ml k= 18 r=3.030e+00 s=1.473e-02
+    ml k= 19 r=3.128e+00 s=1.209e-02
+    ml k= 20 r=3.185e+00 s=8.555e-03
+    ml k= 21 r=3.729e+00 s=4.746e-03
+    ml k= 22 r=3.772e+00 s=8.167e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=3.195e+01 s=1.032e-03
+    admm k=   2 r=1.137e+01 s=9.032e-02
+    admm k=   3 r=3.330e+00 s=1.251e-01
+    admm k=  10 r=2.308e-01 s=4.590e-03
+    admm k=  20 r=1.301e-01 s=7.950e-04
+    admm k=  30 r=8.383e-02 s=1.495e-04
+    admm k=  40 r=5.434e-02 s=2.913e-05
+    admm k=  50 r=3.524e-02 s=5.774e-06
+    admm k=  60 r=2.287e-02 s=1.159e-06
+    admm k=  70 r=1.485e-02 s=2.404e-07
+    admm k=  80 r=9.659e-03 s=5.943e-08
+    admm k=  90 r=6.295e-03 s=2.512e-08
+    admm k= 100 r=4.115e-03 s=1.603e-08
+    admm k= 110 r=2.705e-03 s=1.137e-08
+    admm k= 120 r=1.794e-03 s=8.348e-09
+    admm k= 130 r=1.213e-03 s=3.558e-07
+    admm k= 140 r=8.369e-04 s=5.095e-09
+    admm k= 150 r=5.971e-04 s=3.975e-09
+    admm k= 160 r=3.372e-04 s=3.659e-09
+    admm k= 170 r=2.286e-04 s=8.000e-09
+    admm k= 180 r=2.993e-04 s=2.223e-09
+    admm k= 190 r=1.122e-04 s=1.760e-07
+    admm k= 200 r=2.319e-04 s=1.597e-09
+    admm k= 210 r=2.082e-04 s=1.372e-09
+SUMMARY {
+  "S": 20,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 22,
+  "K_tail": 213,
+  "iterations_total": 235,
+  "r_terminal": 5.965757371683188e-05,
+  "s_terminal": 1.308779491538276e-09,
+  "algorithm_wall_measured": 57.092492673999914,
+  "algorithm_wall_function": 57.09233735399994,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.0036645754544224474,
+    0.001485889590805362,
+    0.00017398831844481967
+  ],
+  "ml_component_sum_seconds": [
+    0.08062065999729384,
+    0.032689570997717965,
+    0.003827743005786033
+  ],
+  "ml_other_seconds": 0.0028241609998076456,
+  "inner_qp_worst": {
+    "res": 3.4046292007872125e-08,
+    "mu": 2.886818385475734e-10,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2336832.779146063,
+    "q_scenario_primal_plus_first_stage": 2336832.78054099,
+    "q_primal_dual_spread": 0.0013949270360171795,
+    "V_pinned": 2336840.8691048836,
+    "V_pinned_dual_lower": 2336840.8677644855,
+    "V_primal_dual_spread": 0.0013403980992734432,
+    "absolute_gap": 8.08995882049203,
+    "relative_gap": 3.4619331313249988e-06,
+    "relative_gap_valid": true,
+    "first_stage_inf": 15007.868894845791,
+    "dual_scenario_min_margin": 6.901967572048306e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 1.471991417645313e-10,
+      "mu": 1.1635547715569556e-12
+    },
+    "pinned_solver_info": {
+      "iters": 43,
+      "res": 7.275957614183426e-12,
+      "mu": 2.1500803323737108e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.544409278000785
+  }
+}
+CLEAN_DONE hybrid_S20_seed101
+CLEAN_START exact_S20_seed102 2026-11-12T15:39:32.379830+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.715e+02 s=1.402e-15
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   2 r=5.293e+01 s=2.334e+00
+    admm k=   3 r=2.801e+01 s=2.622e-01
+    admm k=  10 r=3.954e-01 s=1.918e-02
+    admm k=  20 r=5.766e-02 s=2.696e-03
+    admm k=  30 r=1.792e-02 s=5.081e-04
+    admm k=  40 r=9.993e-03 s=9.961e-05
+    admm k=  50 r=6.351e-03 s=1.984e-05
+    admm k=  60 r=4.091e-03 s=3.974e-06
+    admm k=  70 r=2.639e-03 s=7.981e-07
+    admm k=  80 r=1.703e-03 s=1.604e-07
+    admm k=  90 r=1.099e-03 s=3.226e-08
+    admm k= 100 r=7.088e-04 s=6.487e-09
+    admm k= 110 r=4.573e-04 s=1.305e-09
+    admm k= 120 r=2.950e-04 s=2.624e-10
+    admm k= 130 r=1.903e-04 s=5.278e-11
+    admm k= 140 r=1.228e-04 s=1.062e-11
+SUMMARY {
+  "S": 20,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 145,
+  "iterations_total": 145,
+  "r_terminal": 9.863341730291883e-05,
+  "s_terminal": 4.760176280281743e-12,
+  "algorithm_wall_measured": 37.97504377699988,
+  "algorithm_wall_function": 37.97496433700053,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 1.680097194700636e-07,
+    "mu": 7.601787192491019e-09,
+    "iters": 38
+  },
+  "certificate": {
+    "p_low": 2350781.1752793156,
+    "q_scenario_primal_plus_first_stage": 2350781.1767158834,
+    "q_primal_dual_spread": 0.0014365678653120995,
+    "V_pinned": 2350781.176716837,
+    "V_pinned_dual_lower": 2350781.1753756595,
+    "V_primal_dual_spread": 0.0013411776162683964,
+    "absolute_gap": 0.0014375215396285057,
+    "relative_gap": 6.1150801901317e-10,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14193.17023074025,
+    "dual_scenario_min_margin": 6.886488699819893e-05,
+    "dual_solver_info": {
+      "iters": 37,
+      "res": 8.185452315956354e-12,
+      "mu": 4.124396007509626e-10
+    },
+    "pinned_solver_info": {
+      "iters": 39,
+      "res": 7.73070496506989e-12,
+      "mu": 2.2747088732664228e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5035656830004882
+  }
+}
+CLEAN_DONE exact_S20_seed102
+CLEAN_START ml_S20_seed102 2026-11-12T15:40:12.465369+00:00
+    ml k=  1 r=2.838e+02 s=1.402e-15
+    ml k=  2 r=3.958e+02 s=2.847e+00
+    ml k=  3 r=3.293e+02 s=3.961e+00
+    ml k=  4 r=9.529e+01 s=4.110e+00
+    ml k=  5 r=2.810e+01 s=8.545e-01
+    ml k=  6 r=1.473e+01 s=3.070e-01
+    ml k=  7 r=9.146e+00 s=1.581e-01
+    ml k=  8 r=7.088e+00 s=9.973e-02
+    ml k=  9 r=6.245e+00 s=5.143e-02
+    ml k= 10 r=5.906e+00 s=5.033e-02
+    ml k= 11 r=6.152e+00 s=1.928e-02
+    ml k= 12 r=7.068e+00 s=2.992e-02
+    ml k= 13 r=5.265e+00 s=3.264e-02
+    ml k= 14 r=3.473e+00 s=5.549e-02
+    ml k= 15 r=5.335e+00 s=2.984e-02
+    ml k= 16 r=3.337e+00 s=1.460e-02
+    ml k= 17 r=3.258e+00 s=1.128e-02
+    ml k= 18 r=2.886e+00 s=1.493e-02
+    ml k= 19 r=3.333e+00 s=1.248e-02
+    ml k= 20 r=3.055e+00 s=9.117e-03
+    ml k= 21 r=3.580e+00 s=4.446e-03
+    ml k= 22 r=3.643e+00 s=1.076e-03
+    ml k= 23 r=3.759e+00 s=1.090e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 20,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 23,
+  "K_tail": 0,
+  "iterations_total": 23,
+  "r_terminal": 3.7592897505033767,
+  "s_terminal": 0.001089653938104008,
+  "algorithm_wall_measured": 0.1697339499996815,
+  "algorithm_wall_function": 0.1696471000004749,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.005051806000111632,
+    0.0017149856087638434,
+    0.0003663813474660223
+  ],
+  "ml_component_sum_seconds": [
+    0.11619153800256754,
+    0.0394446690015684,
+    0.008426770991718513
+  ],
+  "ml_other_seconds": 0.00558412200462044,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2350485.1476127952,
+    "q_scenario_primal_plus_first_stage": 2350485.149226963,
+    "q_primal_dual_spread": 0.00161416782066226,
+    "V_pinned": 6833458.209723815,
+    "V_pinned_dual_lower": 6833458.20837553,
+    "V_primal_dual_spread": 0.0013482850044965744,
+    "absolute_gap": 4482973.06211102,
+    "relative_gap": 1.9072543668969901,
+    "relative_gap_valid": true,
+    "first_stage_inf": 17315.084968570925,
+    "dual_scenario_min_margin": 6.89539301674813e-05,
+    "dual_solver_info": {
+      "iters": 38,
+      "res": 5.438104357935458e-07,
+      "mu": 2.323058797735225e-09
+    },
+    "pinned_solver_info": {
+      "iters": 40,
+      "res": 7.275957614183426e-12,
+      "mu": 7.707367004945979e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 9.549694368615746e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5653329859997029
+  }
+}
+CLEAN_DONE ml_S20_seed102
+CLEAN_START hybrid_S20_seed102 2026-11-12T15:40:14.564301+00:00
+    ml k=  1 r=2.838e+02 s=1.402e-15
+    ml k=  2 r=3.958e+02 s=2.847e+00
+    ml k=  3 r=3.293e+02 s=3.961e+00
+    ml k=  4 r=9.529e+01 s=4.110e+00
+    ml k=  5 r=2.810e+01 s=8.545e-01
+    ml k=  6 r=1.473e+01 s=3.070e-01
+    ml k=  7 r=9.146e+00 s=1.581e-01
+    ml k=  8 r=7.088e+00 s=9.973e-02
+    ml k=  9 r=6.245e+00 s=5.143e-02
+    ml k= 10 r=5.906e+00 s=5.033e-02
+    ml k= 11 r=6.152e+00 s=1.928e-02
+    ml k= 12 r=7.068e+00 s=2.992e-02
+    ml k= 13 r=5.265e+00 s=3.264e-02
+    ml k= 14 r=3.473e+00 s=5.549e-02
+    ml k= 15 r=5.335e+00 s=2.984e-02
+    ml k= 16 r=3.337e+00 s=1.460e-02
+    ml k= 17 r=3.258e+00 s=1.128e-02
+    ml k= 18 r=2.886e+00 s=1.493e-02
+    ml k= 19 r=3.333e+00 s=1.248e-02
+    ml k= 20 r=3.055e+00 s=9.117e-03
+    ml k= 21 r=3.580e+00 s=4.446e-03
+    ml k= 22 r=3.643e+00 s=1.076e-03
+    ml k= 23 r=3.759e+00 s=1.090e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=3.523e+01 s=1.148e-03
+    admm k=   2 r=9.835e+00 s=8.416e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   3 r=3.966e+00 s=1.152e-01
+    admm k=  10 r=2.360e-01 s=4.736e-03
+    admm k=  20 r=1.325e-01 s=8.230e-04
+    admm k=  30 r=8.540e-02 s=1.557e-04
+    admm k=  40 r=5.509e-02 s=3.258e-05
+    admm k=  50 r=3.570e-02 s=9.523e-06
+    admm k=  60 r=2.409e-02 s=7.862e-06
+    admm k=  70 r=1.507e-02 s=7.358e-06
+    admm k=  80 r=9.968e-03 s=4.439e-06
+    admm k=  90 r=6.355e-03 s=3.431e-06
+    admm k= 100 r=4.143e-03 s=5.170e-08
+    admm k= 110 r=2.693e-03 s=5.189e-08
+    admm k= 120 r=1.736e-03 s=1.824e-08
+    admm k= 130 r=1.130e-03 s=1.637e-08
+    admm k= 140 r=2.801e-03 s=3.859e-08
+    admm k= 150 r=4.916e-04 s=3.236e-08
+    admm k= 160 r=3.169e-04 s=2.259e-08
+    admm k= 170 r=2.038e-04 s=1.936e-10
+    admm k= 180 r=1.328e-04 s=1.073e-08
+SUMMARY {
+  "S": 20,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 187,
+  "iterations_total": 210,
+  "r_terminal": 9.842916855775746e-05,
+  "s_terminal": 1.0659793729996182e-08,
+  "algorithm_wall_measured": 47.58341878400006,
+  "algorithm_wall_function": 47.58325474400044,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.003711523304248302,
+    0.0014701591304876038,
+    0.00017951195664152138
+  ],
+  "ml_component_sum_seconds": [
+    0.08536503599771095,
+    0.033813660001214885,
+    0.004128775002754992
+  ],
+  "ml_other_seconds": 0.002371029998357699,
+  "inner_qp_worst": {
+    "res": 1.8511043364810575e-08,
+    "mu": 3.036917666325557e-09,
+    "iters": 38
+  },
+  "certificate": {
+    "p_low": 2350781.175242872,
+    "q_scenario_primal_plus_first_stage": 2350781.1766387895,
+    "q_primal_dual_spread": 0.001395917497575283,
+    "V_pinned": 2350781.179776338,
+    "V_pinned_dual_lower": 2350781.178435161,
+    "V_primal_dual_spread": 0.001341177150607109,
+    "absolute_gap": 0.004533465951681137,
+    "relative_gap": 1.928493387400365e-09,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14882.171995478813,
+    "dual_scenario_min_margin": 6.884773029014468e-05,
+    "dual_solver_info": {
+      "iters": 37,
+      "res": 1.728106546750041e-11,
+      "mu": 3.1055591120143475e-12
+    },
+    "pinned_solver_info": {
+      "iters": 39,
+      "res": 7.275957614183426e-12,
+      "mu": 2.274965102689733e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.48826941900006204
+  }
+}
+CLEAN_DONE hybrid_S20_seed102
+CLEAN_START exact_S20_seed103 2026-11-12T15:41:04.021872+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.695e+02 s=1.313e-15
+    admm k=   2 r=5.092e+01 s=2.275e+00
+    admm k=   3 r=2.383e+01 s=2.851e-01
+    admm k=  10 r=9.293e-01 s=1.241e-02
+    admm k=  20 r=4.558e-02 s=2.202e-03
+    admm k=  30 r=1.502e-02 s=4.316e-04
+    admm k=  40 r=8.407e-03 s=8.581e-05
+    admm k=  50 r=5.340e-03 s=1.716e-05
+    admm k=  60 r=3.440e-03 s=3.441e-06
+    admm k=  70 r=2.219e-03 s=6.908e-07
+    admm k=  80 r=1.432e-03 s=1.388e-07
+    admm k=  90 r=9.236e-04 s=2.791e-08
+    admm k= 100 r=5.959e-04 s=5.611e-09
+    admm k= 110 r=3.844e-04 s=1.128e-09
+    admm k= 120 r=2.480e-04 s=2.269e-10
+    admm k= 130 r=1.600e-04 s=4.564e-11
+    admm k= 140 r=1.032e-04 s=9.180e-12
+SUMMARY {
+  "S": 20,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 141,
+  "iterations_total": 141,
+  "r_terminal": 9.881463703110699e-05,
+  "s_terminal": 7.820039727174338e-12,
+  "algorithm_wall_measured": 37.7329111629997,
+  "algorithm_wall_function": 37.732841132999965,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 3.439316609288312e-09,
+    "mu": 1.1272839097388424e-07,
+    "iters": 39
+  },
+  "certificate": {
+    "p_low": 2302134.7403888437,
+    "q_scenario_primal_plus_first_stage": 2302134.741787806,
+    "q_primal_dual_spread": 0.0013989624567329884,
+    "V_pinned": 2302134.741952466,
+    "V_pinned_dual_lower": 2302134.740578626,
+    "V_primal_dual_spread": 0.0013738400302827358,
+    "absolute_gap": 0.0015636221505701542,
+    "relative_gap": 6.792053145881676e-10,
+    "relative_gap_valid": true,
+    "first_stage_inf": 14562.258025228508,
+    "dual_scenario_min_margin": 6.885596667416394e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 7.275957614183426e-12,
+      "mu": 6.093931971601745e-11
+    },
+    "pinned_solver_info": {
+      "iters": 40,
+      "res": 7.275957614183426e-12,
+      "mu": 3.719596990750712e-10
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.510523189000196
+  }
+}
+CLEAN_DONE exact_S20_seed103
+CLEAN_START ml_S20_seed103 2026-11-12T15:41:43.625905+00:00
+    ml k=  1 r=2.752e+02 s=1.313e-15
+    ml k=  2 r=3.709e+02 s=2.763e+00
+    ml k=  3 r=3.250e+02 s=3.713e+00
+    ml k=  4 r=9.452e+01 s=4.088e+00
+    ml k=  5 r=3.550e+01 s=7.949e-01
+    ml k=  6 r=1.800e+01 s=3.974e-01
+    ml k=  7 r=1.273e+01 s=2.163e-01
+    ml k=  8 r=8.633e+00 s=1.458e-01
+    ml k=  9 r=7.492e+00 s=7.789e-02
+    ml k= 10 r=6.444e+00 s=6.716e-02
+    ml k= 11 r=6.339e+00 s=2.989e-02
+    ml k= 12 r=7.077e+00 s=3.709e-02
+    ml k= 13 r=7.262e+00 s=2.127e-02
+    ml k= 14 r=5.925e+00 s=6.854e-02
+    ml k= 15 r=7.283e+00 s=5.378e-02
+    ml k= 16 r=4.306e+00 s=2.124e-02
+    ml k= 17 r=4.032e+00 s=1.326e-02
+    ml k= 18 r=2.989e+00 s=1.567e-02
+    ml k= 19 r=3.048e+00 s=1.180e-02
+    ml k= 20 r=2.880e+00 s=6.887e-03
+    ml k= 21 r=3.498e+00 s=5.704e-03
+    ml k= 22 r=3.577e+00 s=5.028e-04
+    ml k= 23 r=3.681e+00 s=1.101e-03
+    ml k= 24 r=3.819e+00 s=1.202e-03
+    ml k= 25 r=3.949e+00 s=1.519e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 20,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 25,
+  "K_tail": 0,
+  "iterations_total": 25,
+  "r_terminal": 3.948813135463386,
+  "s_terminal": 0.0015190234877648634,
+  "algorithm_wall_measured": 0.13950984199982486,
+  "algorithm_wall_function": 0.1394334719998369,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.0037993358399762657,
+    0.0014645120799832512,
+    0.00018005284000537357
+  ],
+  "ml_component_sum_seconds": [
+    0.09498339599940664,
+    0.03661280199958128,
+    0.0045013210001343396
+  ],
+  "ml_other_seconds": 0.003335953000714653,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2301858.114602556,
+    "q_scenario_primal_plus_first_stage": 2301858.116255831,
+    "q_primal_dual_spread": 0.0016532749868929386,
+    "V_pinned": 2366530.807430528,
+    "V_pinned_dual_lower": 2366530.806065796,
+    "V_primal_dual_spread": 0.0013647321611642838,
+    "absolute_gap": 64672.69282797212,
+    "relative_gap": 0.02809586412720258,
+    "relative_gap_valid": true,
+    "first_stage_inf": 17306.599682117303,
+    "dual_scenario_min_margin": 6.890369695611298e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 4.208422255125299e-07,
+      "mu": 2.615443214739264e-09
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 8.640199666842818e-12,
+      "mu": 2.766053686688581e-10
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5418941070001893
+  }
+}
+CLEAN_DONE ml_S20_seed103
+CLEAN_START hybrid_S20_seed103 2026-11-12T15:41:45.643297+00:00
+    ml k=  1 r=2.752e+02 s=1.313e-15
+    ml k=  2 r=3.709e+02 s=2.763e+00
+    ml k=  3 r=3.250e+02 s=3.713e+00
+    ml k=  4 r=9.452e+01 s=4.088e+00
+    ml k=  5 r=3.550e+01 s=7.949e-01
+    ml k=  6 r=1.800e+01 s=3.974e-01
+    ml k=  7 r=1.273e+01 s=2.163e-01
+    ml k=  8 r=8.633e+00 s=1.458e-01
+    ml k=  9 r=7.492e+00 s=7.789e-02
+    ml k= 10 r=6.444e+00 s=6.716e-02
+    ml k= 11 r=6.339e+00 s=2.989e-02
+    ml k= 12 r=7.077e+00 s=3.709e-02
+    ml k= 13 r=7.262e+00 s=2.127e-02
+    ml k= 14 r=5.925e+00 s=6.854e-02
+    ml k= 15 r=7.283e+00 s=5.378e-02
+    ml k= 16 r=4.306e+00 s=2.124e-02
+    ml k= 17 r=4.032e+00 s=1.326e-02
+    ml k= 18 r=2.989e+00 s=1.567e-02
+    ml k= 19 r=3.048e+00 s=1.180e-02
+    ml k= 20 r=2.880e+00 s=6.887e-03
+    ml k= 21 r=3.498e+00 s=5.704e-03
+    ml k= 22 r=3.577e+00 s=5.028e-04
+    ml k= 23 r=3.681e+00 s=1.101e-03
+    ml k= 24 r=3.819e+00 s=1.202e-03
+    ml k= 25 r=3.949e+00 s=1.519e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=3.520e+01 s=1.724e-03
+    admm k=   2 r=2.083e+01 s=3.197e-01
+    admm k=   3 r=4.358e+00 s=1.947e-01
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=  10 r=2.615e-01 s=4.245e-03
+    admm k=  20 r=1.550e-01 s=7.179e-04
+    admm k=  30 r=1.007e-01 s=1.338e-04
+    admm k=  40 r=6.464e-02 s=2.926e-05
+    admm k=  50 r=4.190e-02 s=4.978e-06
+    admm k=  60 r=2.913e-02 s=9.933e-07
+    admm k=  70 r=1.760e-02 s=2.084e-07
+    admm k=  80 r=1.142e-02 s=5.976e-08
+    admm k=  90 r=7.416e-03 s=3.495e-08
+    admm k= 100 r=4.822e-03 s=2.448e-08
+    admm k= 110 r=3.143e-03 s=1.742e-08
+    admm k= 120 r=2.055e-03 s=1.253e-08
+    admm k= 130 r=1.352e-03 s=9.143e-09
+    admm k= 140 r=8.892e-04 s=6.828e-07
+    admm k= 150 r=6.075e-04 s=5.264e-09
+    admm k= 160 r=4.204e-04 s=4.076e-09
+    admm k= 170 r=3.025e-04 s=4.331e-07
+    admm k= 180 r=2.278e-04 s=2.543e-09
+    admm k= 190 r=1.815e-04 s=1.670e-07
+    admm k= 200 r=1.505e-04 s=1.714e-09
+    admm k= 210 r=1.296e-04 s=1.438e-09
+    admm k= 220 r=1.148e-04 s=1.208e-09
+    admm k= 230 r=1.037e-04 s=1.026e-09
+SUMMARY {
+  "S": 20,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 25,
+  "K_tail": 234,
+  "iterations_total": 259,
+  "r_terminal": 9.992617997542771e-05,
+  "s_terminal": 9.63624409677479e-10,
+  "algorithm_wall_measured": 65.71499625500019,
+  "algorithm_wall_function": 65.7148174540007,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.0037296548398808227,
+    0.0014588809600536478,
+    0.00018620852009917143
+  ],
+  "ml_component_sum_seconds": [
+    0.09324137099702057,
+    0.0364720240013412,
+    0.004655213002479286
+  ],
+  "ml_other_seconds": 0.006247196000003896,
+  "inner_qp_worst": {
+    "res": 4.493232519386936e-08,
+    "mu": 5.6339940399314045e-09,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2302134.740392735,
+    "q_scenario_primal_plus_first_stage": 2302134.741785719,
+    "q_primal_dual_spread": 0.0013929838314652443,
+    "V_pinned": 2302140.9272773857,
+    "V_pinned_dual_lower": 2302140.925930663,
+    "V_primal_dual_spread": 0.001346722710877657,
+    "absolute_gap": 6.186884650494903,
+    "relative_gap": 2.687455491610124e-06,
+    "relative_gap_valid": true,
+    "first_stage_inf": 15208.210123466062,
+    "dual_scenario_min_margin": 6.885586481075734e-05,
+    "dual_solver_info": {
+      "iters": 39,
+      "res": 3.024761108250118e-09,
+      "mu": 1.1680207615898e-12
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 7.275957614183426e-12,
+      "mu": 8.793944185941786e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 0.5441020179996485
+  }
+}
+CLEAN_DONE hybrid_S20_seed103
+CLEAN_START exact_S50_seed99 2026-11-12T15:42:53.298169+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.286e+02 s=2.948e-15
+    admm k=   2 r=1.313e+01 s=1.650e+00
+    admm k=   3 r=1.106e+01 s=3.309e-01
+    admm k=  10 r=2.825e-01 s=1.631e-02
+    admm k=  20 r=6.110e-02 s=6.828e-03
+    admm k=  30 r=2.515e-02 s=3.203e-03
+    admm k=  40 r=1.164e-02 s=1.573e-03
+    admm k=  50 r=5.676e-03 s=7.858e-04
+    admm k=  60 r=2.824e-03 s=3.958e-04
+    admm k=  70 r=1.419e-03 s=2.002e-04
+    admm k=  80 r=7.167e-04 s=1.015e-04
+    admm k=  90 r=3.631e-04 s=5.158e-05
+    admm k= 100 r=1.844e-04 s=2.624e-05
+    admm k= 110 r=9.374e-05 s=1.336e-05
+SUMMARY {
+  "S": 50,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 110,
+  "iterations_total": 110,
+  "r_terminal": 9.374486326555864e-05,
+  "s_terminal": 1.3360050913364615e-05,
+  "algorithm_wall_measured": 68.67256748399996,
+  "algorithm_wall_function": 68.67247913499978,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 6.328291624058124e-08,
+    "mu": 7.115766102969634e-09,
+    "iters": 44
+  },
+  "certificate": {
+    "p_low": 2298473.529077307,
+    "q_scenario_primal_plus_first_stage": 2298473.532560475,
+    "q_primal_dual_spread": 0.003483168315142393,
+    "V_pinned": 2298473.63011351,
+    "V_pinned_dual_lower": 2298473.626767604,
+    "V_primal_dual_spread": 0.003345905803143978,
+    "absolute_gap": 0.10103620309382677,
+    "relative_gap": 4.395795810377963e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21022.35012748282,
+    "dual_scenario_min_margin": 6.881664012325928e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 7.73070496506989e-12,
+      "mu": 5.7154187840941884e-12
+    },
+    "pinned_solver_info": {
+      "iters": 43,
+      "res": 8.185452315956354e-12,
+      "mu": 2.3340997775934307e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.209946683000453
+  }
+}
+CLEAN_DONE exact_S50_seed99
+CLEAN_START ml_S50_seed99 2026-11-12T15:44:04.742564+00:00
+    ml k=  1 r=2.757e+02 s=2.948e-15
+    ml k=  2 r=3.724e+02 s=2.767e+00
+    ml k=  3 r=3.266e+02 s=3.728e+00
+    ml k=  4 r=9.578e+01 s=4.102e+00
+    ml k=  5 r=3.153e+01 s=8.131e-01
+    ml k=  6 r=1.674e+01 s=3.489e-01
+    ml k=  7 r=1.125e+01 s=1.894e-01
+    ml k=  8 r=8.433e+00 s=1.262e-01
+    ml k=  9 r=6.992e+00 s=6.655e-02
+    ml k= 10 r=6.668e+00 s=5.924e-02
+    ml k= 11 r=6.209e+00 s=2.490e-02
+    ml k= 12 r=7.053e+00 s=3.329e-02
+    ml k= 13 r=7.599e+00 s=1.786e-02
+    ml k= 14 r=6.179e+00 s=6.016e-02
+    ml k= 15 r=7.241e+00 s=5.204e-02
+    ml k= 16 r=5.548e+00 s=1.027e-02
+    ml k= 17 r=4.806e+00 s=1.068e-02
+    ml k= 18 r=3.863e+00 s=1.382e-02
+    ml k= 19 r=4.210e+00 s=1.144e-02
+    ml k= 20 r=4.051e+00 s=7.089e-03
+    ml k= 21 r=4.082e+00 s=6.205e-03
+    ml k= 22 r=4.100e+00 s=5.464e-04
+    ml k= 23 r=4.245e+00 s=1.250e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+SUMMARY {
+  "S": 50,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "ml",
+  "K_ml": 23,
+  "K_tail": 0,
+  "iterations_total": 23,
+  "r_terminal": 4.244577947152048,
+  "s_terminal": 0.0012496490512250464,
+  "algorithm_wall_measured": 0.18604073300048185,
+  "algorithm_wall_function": 0.18596164299924567,
+  "stop_reason": "stall",
+  "ml_component_mean_seconds": [
+    0.005626424739286607,
+    0.001871101217424755,
+    0.0003994166086356373
+  ],
+  "ml_component_sum_seconds": [
+    0.12940776900359197,
+    0.04303532800076937,
+    0.009186581998619658
+  ],
+  "ml_other_seconds": 0.004331963996264676,
+  "inner_qp_worst": {
+    "res": null,
+    "mu": null,
+    "iters": null
+  },
+  "certificate": {
+    "p_low": 2293170.4124060962,
+    "q_scenario_primal_plus_first_stage": 2293170.4159476724,
+    "q_primal_dual_spread": 0.003541576210409403,
+    "V_pinned": 2433313.5647155815,
+    "V_pinned_dual_lower": 2433313.5613692123,
+    "V_primal_dual_spread": 0.0033463691361248493,
+    "absolute_gap": 140143.15230948525,
+    "relative_gap": 0.06111327424743843,
+    "relative_gap_valid": true,
+    "first_stage_inf": 43295.33879255625,
+    "dual_scenario_min_margin": 6.882812886033207e-05,
+    "dual_solver_info": {
+      "iters": 47,
+      "res": 2.388913303841278e-07,
+      "mu": 2.4463488660624465e-10
+    },
+    "pinned_solver_info": {
+      "iters": 46,
+      "res": 8.185452315956354e-12,
+      "mu": 3.931037623931835e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.3978728989995943
+  }
+}
+CLEAN_FAILED ml_S50_seed99 0
+CLEAN_START hybrid_S50_seed99 2026-11-12T15:44:07.688662+00:00
+    ml k=  1 r=2.757e+02 s=2.948e-15
+    ml k=  2 r=3.724e+02 s=2.767e+00
+    ml k=  3 r=3.266e+02 s=3.728e+00
+    ml k=  4 r=9.578e+01 s=4.102e+00
+    ml k=  5 r=3.153e+01 s=8.131e-01
+    ml k=  6 r=1.674e+01 s=3.489e-01
+    ml k=  7 r=1.125e+01 s=1.894e-01
+    ml k=  8 r=8.433e+00 s=1.262e-01
+    ml k=  9 r=6.992e+00 s=6.655e-02
+    ml k= 10 r=6.668e+00 s=5.924e-02
+    ml k= 11 r=6.209e+00 s=2.490e-02
+    ml k= 12 r=7.053e+00 s=3.329e-02
+    ml k= 13 r=7.599e+00 s=1.786e-02
+    ml k= 14 r=6.179e+00 s=6.016e-02
+    ml k= 15 r=7.241e+00 s=5.204e-02
+    ml k= 16 r=5.548e+00 s=1.027e-02
+    ml k= 17 r=4.806e+00 s=1.068e-02
+    ml k= 18 r=3.863e+00 s=1.382e-02
+    ml k= 19 r=4.210e+00 s=1.144e-02
+    ml k= 20 r=4.051e+00 s=7.089e-03
+    ml k= 21 r=4.082e+00 s=6.205e-03
+    ml k= 22 r=4.100e+00 s=5.464e-04
+    ml k= 23 r=4.245e+00 s=1.250e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=8.084e+01 s=1.295e-03
+    admm k=   2 r=4.572e+01 s=6.200e-01
+    admm k=   3 r=1.296e+01 s=3.869e-01
+    admm k=  10 r=2.840e-01 s=5.284e-03
+    admm k=  20 r=9.641e-02 s=2.368e-03
+    admm k=  30 r=3.380e-02 s=1.096e-03
+    admm k=  40 r=1.199e-02 s=5.207e-04
+    admm k=  50 r=4.344e-03 s=2.521e-04
+    admm k=  60 r=1.632e-03 s=1.238e-04
+    admm k=  70 r=6.472e-04 s=6.137e-05
+    admm k=  80 r=2.740e-04 s=3.064e-05
+    admm k=  90 r=1.236e-04 s=1.538e-05
+SUMMARY {
+  "S": 50,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 93,
+  "iterations_total": 116,
+  "r_terminal": 9.835639813267654e-05,
+  "s_terminal": 1.2515660988170515e-05,
+  "algorithm_wall_measured": 60.90897979000056,
+  "algorithm_wall_function": 60.9088370290001,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.00574537504330099,
+    0.0019044283042840898,
+    0.00041634852194598034
+  ],
+  "ml_component_sum_seconds": [
+    0.13214362599592278,
+    0.043801850998534064,
+    0.009576016004757548
+  ],
+  "ml_other_seconds": 0.0042910840011245455,
+  "inner_qp_worst": {
+    "res": 1.6634909394408481e-07,
+    "mu": 1.67976305077151e-09,
+    "iters": 43
+  },
+  "certificate": {
+    "p_low": 2298473.5368569465,
+    "q_scenario_primal_plus_first_stage": 2298473.540340311,
+    "q_primal_dual_spread": 0.0034833643585443497,
+    "V_pinned": 2298473.630113552,
+    "V_pinned_dual_lower": 2298473.6267676456,
+    "V_primal_dual_spread": 0.0033459062688052654,
+    "absolute_gap": 0.09325660532340407,
+    "relative_gap": 4.0573277798502765e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21636.53561899865,
+    "dual_scenario_min_margin": 6.881666195113212e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 7.73070496506989e-12,
+      "mu": 6.474901537266256e-12
+    },
+    "pinned_solver_info": {
+      "iters": 43,
+      "res": 7.73070496506989e-12,
+      "mu": 2.334316537400451e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.254546902000584
+  }
+}
+CLEAN_DONE hybrid_S50_seed99
+CLEAN_START exact_S50_seed100 2026-11-12T15:45:11.354478+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.289e+02 s=2.892e-15
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   2 r=1.312e+01 s=1.649e+00
+    admm k=   3 r=1.096e+01 s=3.285e-01
+    admm k=  10 r=2.799e-01 s=1.604e-02
+    admm k=  20 r=6.023e-02 s=6.695e-03
+    admm k=  30 r=2.468e-02 s=3.143e-03
+    admm k=  40 r=1.143e-02 s=1.546e-03
+    admm k=  50 r=5.578e-03 s=7.734e-04
+    admm k=  60 r=2.779e-03 s=3.899e-04
+    admm k=  70 r=1.398e-03 s=1.973e-04
+    admm k=  80 r=7.064e-04 s=1.001e-04
+    admm k=  90 r=3.580e-04 s=5.087e-05
+    admm k= 100 r=1.818e-04 s=2.588e-05
+SUMMARY {
+  "S": 50,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 109,
+  "iterations_total": 109,
+  "r_terminal": 9.892903066461801e-05,
+  "s_terminal": 1.4097762115637822e-05,
+  "algorithm_wall_measured": 64.29275803400014,
+  "algorithm_wall_function": 64.29268957400018,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 1.3837119694493083e-07,
+    "mu": 4.166663348203721e-09,
+    "iters": 40
+  },
+  "certificate": {
+    "p_low": 2302270.0877932003,
+    "q_scenario_primal_plus_first_stage": 2302270.0912754633,
+    "q_primal_dual_spread": 0.003482263069599867,
+    "V_pinned": 2302270.1943746833,
+    "V_pinned_dual_lower": 2302270.1910232664,
+    "V_primal_dual_spread": 0.003351416904479265,
+    "absolute_gap": 0.10658148303627968,
+    "relative_gap": 4.629408321872498e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21123.31461796695,
+    "dual_scenario_min_margin": 6.879088323330507e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 9.676259793423014e-12,
+      "mu": 2.2245450380642123e-13
+    },
+    "pinned_solver_info": {
+      "iters": 40,
+      "res": 8.185452315956354e-12,
+      "mu": 2.291597199423854e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.196360712000569
+  }
+}
+CLEAN_DONE exact_S50_seed100
+CLEAN_START ml_S50_seed100 2026-11-12T15:46:18.310630+00:00
+    ml k=  1 r=2.751e+02 s=2.892e-15
+    ml k=  2 r=3.706e+02 s=2.762e+00
+    ml k=  3 r=3.253e+02 s=3.710e+00
+    ml k=  4 r=9.392e+01 s=4.084e+00
+    ml k=  5 r=3.598e+01 s=7.924e-01
+    ml k=  6 r=1.850e+01 s=4.051e-01
+    ml k=  7 r=1.283e+01 s=2.219e-01
+    ml k=  8 r=9.068e+00 s=1.496e-01
+    ml k=  9 r=7.189e+00 s=8.049e-02
+    ml k= 10 r=6.967e+00 s=6.880e-02
+    ml k= 11 r=5.904e+00 s=3.079e-02
+    ml k= 12 r=6.758e+00 s=3.796e-02
+    ml k= 13 r=7.187e+00 s=1.889e-02
+    ml k= 14 r=5.337e+00 s=5.492e-02
+    ml k= 15 r=4.552e+00 s=5.163e-02
+    ml k= 16 r=3.704e+00 s=8.511e-03
+    ml k= 17 r=3.404e+00 s=1.085e-02
+    ml k= 18 r=3.659e+00 s=1.315e-02
+    ml k= 19 r=3.818e+00 s=1.069e-02
+    ml k= 20 r=3.759e+00 s=7.005e-03
+    ml k= 21 r=4.340e+00 s=6.519e-03
+    ml k= 22 r=4.354e+00 s=9.753e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 131, in main
+    "raw_npz_sha256": sha(out / f"{stem}.npz"),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 60, in robust_sha
+    raise last_error
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 54, in robust_sha
+    value = sha(path)
+            ^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 21, in sha
+    with Path(path).open("rb") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs/ml_S50_seed100.npz'
+CLEAN_FAILED ml_S50_seed100 1
+CLEAN_START hybrid_S50_seed100 2026-11-12T15:46:26.149905+00:00
+    ml k=  1 r=2.751e+02 s=2.892e-15
+    ml k=  2 r=3.706e+02 s=2.762e+00
+    ml k=  3 r=3.253e+02 s=3.710e+00
+    ml k=  4 r=9.392e+01 s=4.084e+00
+    ml k=  5 r=3.598e+01 s=7.924e-01
+    ml k=  6 r=1.850e+01 s=4.051e-01
+    ml k=  7 r=1.283e+01 s=2.219e-01
+    ml k=  8 r=9.068e+00 s=1.496e-01
+    ml k=  9 r=7.189e+00 s=8.049e-02
+    ml k= 10 r=6.967e+00 s=6.880e-02
+    ml k= 11 r=5.904e+00 s=3.079e-02
+    ml k= 12 r=6.758e+00 s=3.796e-02
+    ml k= 13 r=7.187e+00 s=1.889e-02
+    ml k= 14 r=5.337e+00 s=5.492e-02
+    ml k= 15 r=4.552e+00 s=5.163e-02
+    ml k= 16 r=3.704e+00 s=8.511e-03
+    ml k= 17 r=3.404e+00 s=1.085e-02
+    ml k= 18 r=3.659e+00 s=1.315e-02
+    ml k= 19 r=3.818e+00 s=1.069e-02
+    ml k= 20 r=3.759e+00 s=7.005e-03
+    ml k= 21 r=4.340e+00 s=6.519e-03
+    ml k= 22 r=4.354e+00 s=9.753e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=7.254e+01 s=1.157e-03
+    admm k=   2 r=4.579e+01 s=6.343e-01
+    admm k=   3 r=1.323e+01 s=3.827e-01
+    admm k=  10 r=2.416e-01 s=5.106e-03
+    admm k=  20 r=8.148e-02 s=2.287e-03
+    admm k=  30 r=2.868e-02 s=1.058e-03
+    admm k=  40 r=1.025e-02 s=5.021e-04
+    admm k=  50 r=3.757e-03 s=2.428e-04
+    admm k=  60 r=1.437e-03 s=1.191e-04
+    admm k=  70 r=5.827e-04 s=5.898e-05
+    admm k=  80 r=2.524e-04 s=2.943e-05
+    admm k=  90 r=1.158e-04 s=1.476e-05
+SUMMARY {
+  "S": 50,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 22,
+  "K_tail": 92,
+  "iterations_total": 114,
+  "r_terminal": 9.969649432234337e-05,
+  "s_terminal": 1.2861821793659707e-05,
+  "algorithm_wall_measured": 55.61308214300061,
+  "algorithm_wall_function": 55.61295616300049,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.005546591590948744,
+    0.0018501435455701458,
+    0.0003813906816751776
+  ],
+  "ml_component_sum_seconds": [
+    0.12202501500087237,
+    0.040703158002543205,
+    0.008390594996853906
+  ],
+  "ml_other_seconds": 0.0022711740002705483,
+  "inner_qp_worst": {
+    "res": 2.9622637759407766e-07,
+    "mu": 2.6818333074684035e-09,
+    "iters": 40
+  },
+  "certificate": {
+    "p_low": 2302270.0979720633,
+    "q_scenario_primal_plus_first_stage": 2302270.1014543353,
+    "q_primal_dual_spread": 0.0034822719171643257,
+    "V_pinned": 2302270.194426367,
+    "V_pinned_dual_lower": 2302270.191074951,
+    "V_primal_dual_spread": 0.0033514159731566906,
+    "absolute_gap": 0.09645430371165276,
+    "relative_gap": 4.1895303160395376e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21785.06686226534,
+    "dual_scenario_min_margin": 6.879088323330507e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 7.086597975103359e-11,
+      "mu": 2.58326298590954e-13
+    },
+    "pinned_solver_info": {
+      "iters": 40,
+      "res": 8.185452315956354e-12,
+      "mu": 2.291478022864548e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.275957614183426e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.2307108820004942
+  }
+}
+CLEAN_DONE hybrid_S50_seed100
+CLEAN_START exact_S50_seed101 2026-11-12T15:47:24.432082+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.279e+02 s=2.892e-15
+    admm k=   2 r=1.336e+01 s=1.650e+00
+    admm k=   3 r=1.144e+01 s=3.385e-01
+    admm k=  10 r=2.903e-01 s=1.720e-02
+    admm k=  20 r=6.423e-02 s=7.252e-03
+    admm k=  30 r=2.669e-02 s=3.386e-03
+    admm k=  40 r=1.232e-02 s=1.651e-03
+    admm k=  50 r=5.967e-03 s=8.209e-04
+    admm k=  60 r=2.953e-03 s=4.120e-04
+    admm k=  70 r=1.478e-03 s=2.079e-04
+    admm k=  80 r=7.447e-04 s=1.053e-04
+    admm k=  90 r=3.767e-04 s=5.346e-05
+    admm k= 100 r=1.911e-04 s=2.719e-05
+    admm k= 110 r=9.713e-05 s=1.384e-05
+SUMMARY {
+  "S": 50,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 110,
+  "iterations_total": 110,
+  "r_terminal": 9.71307600455628e-05,
+  "s_terminal": 1.3838860479394088e-05,
+  "algorithm_wall_measured": 72.67078555999979,
+  "algorithm_wall_function": 72.67071983000005,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 2.250909472145679e-07,
+    "mu": 1.4312668670250594e-08,
+    "iters": 45
+  },
+  "certificate": {
+    "p_low": 2307992.6357849995,
+    "q_scenario_primal_plus_first_stage": 2307992.6392708523,
+    "q_primal_dual_spread": 0.0034858528524637222,
+    "V_pinned": 2307992.7400871865,
+    "V_pinned_dual_lower": 2307992.7367383935,
+    "V_primal_dual_spread": 0.003348792903125286,
+    "absolute_gap": 0.10430218698456883,
+    "relative_gap": 4.5191733009621735e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 20777.91378435863,
+    "dual_scenario_min_margin": 6.882543675601482e-05,
+    "dual_solver_info": {
+      "iters": 45,
+      "res": 8.185452315956354e-12,
+      "mu": 1.1571750172279715e-11
+    },
+    "pinned_solver_info": {
+      "iters": 42,
+      "res": 8.640199666842818e-12,
+      "mu": 9.356064246480865e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.2645234920000803
+  }
+}
+CLEAN_DONE exact_S50_seed101
+CLEAN_START ml_S50_seed101 2026-11-12T15:48:40.018495+00:00
+    ml k=  1 r=2.775e+02 s=2.892e-15
+    ml k=  2 r=3.776e+02 s=2.785e+00
+    ml k=  3 r=3.269e+02 s=3.780e+00
+    ml k=  4 r=9.804e+01 s=4.132e+00
+    ml k=  5 r=2.577e+01 s=8.681e-01
+    ml k=  6 r=1.345e+01 s=2.748e-01
+    ml k=  7 r=8.291e+00 s=1.367e-01
+    ml k=  8 r=7.184e+00 s=8.619e-02
+    ml k=  9 r=6.302e+00 s=4.228e-02
+    ml k= 10 r=6.178e+00 s=4.349e-02
+    ml k= 11 r=6.606e+00 s=1.534e-02
+    ml k= 12 r=7.368e+00 s=2.649e-02
+    ml k= 13 r=7.696e+00 s=1.727e-02
+    ml k= 14 r=6.537e+00 s=6.391e-02
+    ml k= 15 r=6.513e+00 s=4.956e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 131, in main
+    "raw_npz_sha256": sha(out / f"{stem}.npz"),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 60, in robust_sha
+    raise last_error
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 54, in robust_sha
+    value = sha(path)
+            ^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 21, in sha
+    with Path(path).open("rb") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs/ml_S50_seed101.npz'
+CLEAN_FAILED ml_S50_seed101 1
+CLEAN_START hybrid_S50_seed101 2026-11-12T15:48:47.989591+00:00
+    ml k=  1 r=2.775e+02 s=2.892e-15
+    ml k=  2 r=3.776e+02 s=2.785e+00
+    ml k=  3 r=3.269e+02 s=3.780e+00
+    ml k=  4 r=9.804e+01 s=4.132e+00
+    ml k=  5 r=2.577e+01 s=8.681e-01
+    ml k=  6 r=1.345e+01 s=2.748e-01
+    ml k=  7 r=8.291e+00 s=1.367e-01
+    ml k=  8 r=7.184e+00 s=8.619e-02
+    ml k=  9 r=6.302e+00 s=4.228e-02
+    ml k= 10 r=6.178e+00 s=4.349e-02
+    ml k= 11 r=6.606e+00 s=1.534e-02
+    ml k= 12 r=7.368e+00 s=2.649e-02
+    ml k= 13 r=7.696e+00 s=1.727e-02
+    ml k= 14 r=6.537e+00 s=6.391e-02
+    ml k= 15 r=6.513e+00 s=4.956e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=6.794e+01 s=1.885e-02
+    admm k=   2 r=4.166e+01 s=5.590e-01
+    admm k=   3 r=1.266e+01 s=3.784e-01
+    admm k=  10 r=1.221e-01 s=5.278e-03
+    admm k=  20 r=3.766e-02 s=2.364e-03
+    admm k=  30 r=1.413e-02 s=1.101e-03
+    admm k=  40 r=5.574e-03 s=5.266e-04
+    admm k=  50 r=2.333e-03 s=2.565e-04
+    admm k=  60 r=1.037e-03 s=1.266e-04
+    admm k=  70 r=4.839e-04 s=6.304e-05
+    admm k=  80 r=2.335e-04 s=3.159e-05
+    admm k=  90 r=1.151e-04 s=1.590e-05
+SUMMARY {
+  "S": 50,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 15,
+  "K_tail": 93,
+  "iterations_total": 108,
+  "r_terminal": 9.3312497101287e-05,
+  "s_terminal": 1.2949221185672426e-05,
+  "algorithm_wall_measured": 60.97171712399995,
+  "algorithm_wall_function": 60.97158860399941,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.0057748295999166055,
+    0.0018965568666923598,
+    0.0003864198001489664
+  ],
+  "ml_component_sum_seconds": [
+    0.08662244399874908,
+    0.028448353000385396,
+    0.005796297002234496
+  ],
+  "ml_other_seconds": 0.002521273998354445,
+  "inner_qp_worst": {
+    "res": 4.052085713635023e-07,
+    "mu": 4.166305471833407e-09,
+    "iters": 44
+  },
+  "certificate": {
+    "p_low": 2307992.6451399014,
+    "q_scenario_primal_plus_first_stage": 2307992.648625783,
+    "q_primal_dual_spread": 0.0034858817234635353,
+    "V_pinned": 2307992.740099904,
+    "V_pinned_dual_lower": 2307992.736751111,
+    "V_primal_dual_spread": 0.003348792903125286,
+    "absolute_gap": 0.09496000269427896,
+    "relative_gap": 4.11439797671118e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21541.765082215425,
+    "dual_scenario_min_margin": 6.882554589537904e-05,
+    "dual_solver_info": {
+      "iters": 45,
+      "res": 8.185452315956354e-12,
+      "mu": 1.1685763156661648e-11
+    },
+    "pinned_solver_info": {
+      "iters": 42,
+      "res": 8.185452315956354e-12,
+      "mu": 9.354441312981002e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.3041935159999412
+  }
+}
+CLEAN_DONE hybrid_S50_seed101
+CLEAN_START exact_S50_seed102 2026-11-12T15:49:52.006453+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.278e+02 s=2.917e-15
+    admm k=   2 r=1.339e+01 s=1.650e+00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   3 r=1.157e+01 s=3.396e-01
+    admm k=  10 r=2.927e-01 s=1.745e-02
+    admm k=  20 r=6.520e-02 s=7.367e-03
+    admm k=  30 r=2.713e-02 s=3.435e-03
+    admm k=  40 r=1.251e-02 s=1.673e-03
+    admm k=  50 r=6.047e-03 s=8.303e-04
+    admm k=  60 r=2.988e-03 s=4.163e-04
+    admm k=  70 r=1.494e-03 s=2.100e-04
+    admm k=  80 r=7.522e-04 s=1.063e-04
+    admm k=  90 r=3.804e-04 s=5.397e-05
+    admm k= 100 r=1.929e-04 s=2.744e-05
+    admm k= 110 r=9.804e-05 s=1.397e-05
+SUMMARY {
+  "S": 50,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 110,
+  "iterations_total": 110,
+  "r_terminal": 9.803588335661732e-05,
+  "s_terminal": 1.396664634811076e-05,
+  "algorithm_wall_measured": 66.69322019399988,
+  "algorithm_wall_function": 66.693149404,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 3.3164578083777485e-08,
+    "mu": 4.7580122447901056e-09,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2320672.4199188324,
+    "q_scenario_primal_plus_first_stage": 2320672.42342336,
+    "q_primal_dual_spread": 0.003504527732729912,
+    "V_pinned": 2320672.5259028035,
+    "V_pinned_dual_lower": 2320672.522554354,
+    "V_primal_dual_spread": 0.0033484497107565403,
+    "absolute_gap": 0.10598397115245461,
+    "relative_gap": 4.566950951059327e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 20716.158660325673,
+    "dual_scenario_min_margin": 6.884419417474419e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 8.185452315956354e-12,
+      "mu": 7.906231680790864e-11
+    },
+    "pinned_solver_info": {
+      "iters": 49,
+      "res": 7.73070496506989e-12,
+      "mu": 6.094857946692024e-13
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.314656076000574
+  }
+}
+CLEAN_DONE exact_S50_seed102
+CLEAN_START ml_S50_seed102 2026-11-12T15:51:01.482836+00:00
+    ml k=  1 r=2.779e+02 s=2.917e-15
+    ml k=  2 r=3.788e+02 s=2.789e+00
+    ml k=  3 r=3.266e+02 s=3.792e+00
+    ml k=  4 r=9.744e+01 s=4.130e+00
+    ml k=  5 r=2.611e+01 s=8.640e-01
+    ml k=  6 r=1.354e+01 s=2.785e-01
+    ml k=  7 r=8.397e+00 s=1.399e-01
+    ml k=  8 r=6.998e+00 s=8.839e-02
+    ml k=  9 r=5.920e+00 s=4.371e-02
+    ml k= 10 r=6.257e+00 s=4.458e-02
+    ml k= 11 r=6.064e+00 s=1.554e-02
+    ml k= 12 r=6.911e+00 s=2.692e-02
+    ml k= 13 r=7.583e+00 s=1.578e-02
+    ml k= 14 r=5.452e+00 s=6.426e-02
+    ml k= 15 r=6.048e+00 s=5.343e-02
+    ml k= 16 r=3.824e+00 s=1.645e-02
+    ml k= 17 r=3.261e+00 s=1.127e-02
+    ml k= 18 r=2.769e+00 s=1.447e-02
+    ml k= 19 r=3.738e+00 s=1.175e-02
+    ml k= 20 r=3.481e+00 s=7.430e-03
+    ml k= 21 r=3.449e+00 s=5.690e-03
+    ml k= 22 r=3.546e+00 s=8.310e-04
+    ml k= 23 r=3.733e+00 s=1.028e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 131, in main
+    "raw_npz_sha256": sha(out / f"{stem}.npz"),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 60, in robust_sha
+    raise last_error
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 54, in robust_sha
+    value = sha(path)
+            ^^^^^^^^^
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 21, in sha
+    with Path(path).open("rb") as handle:
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/results/runs/ml_S50_seed102.npz'
+CLEAN_FAILED ml_S50_seed102 1
+CLEAN_START hybrid_S50_seed102 2026-11-12T15:51:09.322982+00:00
+    ml k=  1 r=2.779e+02 s=2.917e-15
+    ml k=  2 r=3.788e+02 s=2.789e+00
+    ml k=  3 r=3.266e+02 s=3.792e+00
+    ml k=  4 r=9.744e+01 s=4.130e+00
+    ml k=  5 r=2.611e+01 s=8.640e-01
+    ml k=  6 r=1.354e+01 s=2.785e-01
+    ml k=  7 r=8.397e+00 s=1.399e-01
+    ml k=  8 r=6.998e+00 s=8.839e-02
+    ml k=  9 r=5.920e+00 s=4.371e-02
+    ml k= 10 r=6.257e+00 s=4.458e-02
+    ml k= 11 r=6.064e+00 s=1.554e-02
+    ml k= 12 r=6.911e+00 s=2.692e-02
+    ml k= 13 r=7.583e+00 s=1.578e-02
+    ml k= 14 r=5.452e+00 s=6.426e-02
+    ml k= 15 r=6.048e+00 s=5.343e-02
+    ml k= 16 r=3.824e+00 s=1.645e-02
+    ml k= 17 r=3.261e+00 s=1.127e-02
+    ml k= 18 r=2.769e+00 s=1.447e-02
+    ml k= 19 r=3.738e+00 s=1.175e-02
+    ml k= 20 r=3.481e+00 s=7.430e-03
+    ml k= 21 r=3.449e+00 s=5.690e-03
+    ml k= 22 r=3.546e+00 s=8.310e-04
+    ml k= 23 r=3.733e+00 s=1.028e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=7.596e+01 s=1.084e-03
+    admm k=   2 r=4.249e+01 s=5.477e-01
+    admm k=   3 r=1.261e+01 s=3.819e-01
+    admm k=  10 r=2.453e-01 s=5.331e-03
+    admm k=  20 r=8.265e-02 s=2.384e-03
+    admm k=  30 r=2.912e-02 s=1.107e-03
+    admm k=  40 r=1.042e-02 s=5.281e-04
+    admm k=  50 r=3.838e-03 s=2.568e-04
+    admm k=  60 r=1.478e-03 s=1.266e-04
+    admm k=  70 r=6.055e-04 s=6.298e-05
+    admm k=  80 r=2.651e-04 s=3.155e-05
+    admm k=  90 r=1.229e-04 s=1.588e-05
+SUMMARY {
+  "S": 50,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 93,
+  "iterations_total": 116,
+  "r_terminal": 9.842860352449782e-05,
+  "s_terminal": 1.2929608372121832e-05,
+  "algorithm_wall_measured": 56.86557049400017,
+  "algorithm_wall_function": 56.86544697500085,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.00552393621736606,
+    0.0018595104347696179,
+    0.00038019265222196145
+  ],
+  "ml_component_sum_seconds": [
+    0.12705053299941937,
+    0.04276873999970121,
+    0.008744431001105113
+  ],
+  "ml_other_seconds": 0.004032247000395728,
+  "inner_qp_worst": {
+    "res": 7.852612526892955e-08,
+    "mu": 2.2530843277522404e-09,
+    "iters": 41
+  },
+  "certificate": {
+    "p_low": 2320672.430340317,
+    "q_scenario_primal_plus_first_stage": 2320672.4338457524,
+    "q_primal_dual_spread": 0.0035054353065788746,
+    "V_pinned": 2320672.5262538693,
+    "V_pinned_dual_lower": 2320672.5229021343,
+    "V_primal_dual_spread": 0.0033517349511384964,
+    "absolute_gap": 0.09591355221346021,
+    "relative_gap": 4.1330069233163976e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21339.04668819034,
+    "dual_scenario_min_margin": 6.884402682771906e-05,
+    "dual_solver_info": {
+      "iters": 40,
+      "res": 8.640199666842818e-12,
+      "mu": 8.268616813451915e-11
+    },
+    "pinned_solver_info": {
+      "iters": 49,
+      "res": 8.185452315956354e-12,
+      "mu": 1.4238094110356006e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.3158206460002475
+  }
+}
+CLEAN_DONE hybrid_S50_seed102
+CLEAN_START exact_S50_seed103 2026-11-12T15:52:09.048356+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.279e+02 s=2.892e-15
+    admm k=   2 r=1.337e+01 s=1.650e+00
+    admm k=   3 r=1.150e+01 s=3.385e-01
+    admm k=  10 r=2.916e-01 s=1.734e-02
+    admm k=  20 r=6.478e-02 s=7.318e-03
+    admm k=  30 r=2.694e-02 s=3.415e-03
+    admm k=  40 r=1.243e-02 s=1.665e-03
+    admm k=  50 r=6.017e-03 s=8.271e-04
+    admm k=  60 r=2.976e-03 s=4.149e-04
+    admm k=  70 r=1.489e-03 s=2.094e-04
+    admm k=  80 r=7.500e-04 s=1.060e-04
+    admm k=  90 r=3.793e-04 s=5.383e-05
+    admm k= 100 r=1.924e-04 s=2.737e-05
+    admm k= 110 r=9.779e-05 s=1.393e-05
+SUMMARY {
+  "S": 50,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 110,
+  "iterations_total": 110,
+  "r_terminal": 9.778708077068791e-05,
+  "s_terminal": 1.3932112807226037e-05,
+  "algorithm_wall_measured": 74.30583167700024,
+  "algorithm_wall_function": 74.30575419700017,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 9.803802214491952e-08,
+    "mu": 4.839022084839992e-10,
+    "iters": 45
+  },
+  "certificate": {
+    "p_low": 2311412.5154636265,
+    "q_scenario_primal_plus_first_stage": 2311412.518947807,
+    "q_primal_dual_spread": 0.003484180662781,
+    "V_pinned": 2311412.620439098,
+    "V_pinned_dual_lower": 2311412.6170799597,
+    "V_primal_dual_spread": 0.003359138499945402,
+    "absolute_gap": 0.1049754717387259,
+    "relative_gap": 4.541615615405187e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 20750.401357583534,
+    "dual_scenario_min_margin": 6.885670882184058e-05,
+    "dual_solver_info": {
+      "iters": 41,
+      "res": 8.185452315956354e-12,
+      "mu": 2.269309710984276e-12
+    },
+    "pinned_solver_info": {
+      "iters": 39,
+      "res": 8.185452315956354e-12,
+      "mu": 4.950750044555427e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.2135638469999321
+  }
+}
+CLEAN_DONE exact_S50_seed103
+CLEAN_START ml_S50_seed103 2026-11-12T15:53:26.043549+00:00
+    ml k=  1 r=2.777e+02 s=2.892e-15
+    ml k=  2 r=3.782e+02 s=2.787e+00
+    ml k=  3 r=3.271e+02 s=3.785e+00
+    ml k=  4 r=9.823e+01 s=4.134e+00
+    ml k=  5 r=2.607e+01 s=8.705e-01
+    ml k=  6 r=1.340e+01 s=2.756e-01
+    ml k=  7 r=8.490e+00 s=1.371e-01
+    ml k=  8 r=7.040e+00 s=8.660e-02
+    ml k=  9 r=6.235e+00 s=4.253e-02
+    ml k= 10 r=6.083e+00 s=4.395e-02
+    ml k= 11 r=6.276e+00 s=1.591e-02
+    ml k= 12 r=7.184e+00 s=2.686e-02
+    ml k= 13 r=6.398e+00 s=2.399e-02
+    ml k= 14 r=4.897e+00 s=5.957e-02
+    ml k= 15 r=6.695e+00 s=3.956e-02
+    ml k= 16 r=4.232e+00 s=1.640e-02
+    ml k= 17 r=3.842e+00 s=1.153e-02
+    ml k= 18 r=3.269e+00 s=1.449e-02
+    ml k= 19 r=3.809e+00 s=1.165e-02
+    ml k= 20 r=3.597e+00 s=7.328e-03
+    ml k= 21 r=3.716e+00 s=5.492e-03
+    ml k= 22 r=3.764e+00 s=5.476e-04
+    ml k= 23 r=3.841e+00 s=1.154e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1249, in close
+    self._fileobj.write(buf)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S50_seed103 1
+CLEAN_START hybrid_S50_seed103 2026-11-12T15:53:28.869696+00:00
+    ml k=  1 r=2.777e+02 s=2.892e-15
+    ml k=  2 r=3.782e+02 s=2.787e+00
+    ml k=  3 r=3.271e+02 s=3.785e+00
+    ml k=  4 r=9.823e+01 s=4.134e+00
+    ml k=  5 r=2.607e+01 s=8.705e-01
+    ml k=  6 r=1.340e+01 s=2.756e-01
+    ml k=  7 r=8.490e+00 s=1.371e-01
+    ml k=  8 r=7.040e+00 s=8.660e-02
+    ml k=  9 r=6.235e+00 s=4.253e-02
+    ml k= 10 r=6.083e+00 s=4.395e-02
+    ml k= 11 r=6.276e+00 s=1.591e-02
+    ml k= 12 r=7.184e+00 s=2.686e-02
+    ml k= 13 r=6.398e+00 s=2.399e-02
+    ml k= 14 r=4.897e+00 s=5.957e-02
+    ml k= 15 r=6.695e+00 s=3.956e-02
+    ml k= 16 r=4.232e+00 s=1.640e-02
+    ml k= 17 r=3.842e+00 s=1.153e-02
+    ml k= 18 r=3.269e+00 s=1.449e-02
+    ml k= 19 r=3.809e+00 s=1.165e-02
+    ml k= 20 r=3.597e+00 s=7.328e-03
+    ml k= 21 r=3.716e+00 s=5.492e-03
+    ml k= 22 r=3.764e+00 s=5.476e-04
+    ml k= 23 r=3.841e+00 s=1.154e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=7.603e+01 s=1.300e-03
+    admm k=   2 r=4.341e+01 s=5.616e-01
+    admm k=   3 r=1.255e+01 s=3.862e-01
+    admm k=  10 r=2.333e-01 s=5.471e-03
+    admm k=  20 r=7.847e-02 s=2.447e-03
+    admm k=  30 r=2.773e-02 s=1.135e-03
+    admm k=  40 r=9.978e-03 s=5.407e-04
+    admm k=  50 r=3.704e-03 s=2.626e-04
+    admm k=  60 r=1.443e-03 s=1.293e-04
+    admm k=  70 r=5.991e-04 s=6.429e-05
+    admm k=  80 r=2.654e-04 s=3.219e-05
+    admm k=  90 r=1.241e-04 s=1.619e-05
+SUMMARY {
+  "S": 50,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 93,
+  "iterations_total": 116,
+  "r_terminal": 9.95372661720743e-05,
+  "s_terminal": 1.3182930556244713e-05,
+  "algorithm_wall_measured": 62.481851843000186,
+  "algorithm_wall_function": 62.48166933199991,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.005665698478206532,
+    0.0018792097391427808,
+    0.0004119173043996536
+  ],
+  "ml_component_sum_seconds": [
+    0.13031106499875023,
+    0.04322182400028396,
+    0.009474098001192033
+  ],
+  "ml_other_seconds": 0.003928457000256458,
+  "inner_qp_worst": {
+    "res": 1.899168655672412e-07,
+    "mu": 5.836518504759215e-09,
+    "iters": 44
+  },
+  "certificate": {
+    "p_low": 2311412.5236036563,
+    "q_scenario_primal_plus_first_stage": 2311412.5270879413,
+    "q_primal_dual_spread": 0.003484284970909357,
+    "V_pinned": 2311412.6203746176,
+    "V_pinned_dual_lower": 2311412.617015506,
+    "V_primal_dual_spread": 0.0033591114915907383,
+    "absolute_gap": 0.0967709613032639,
+    "relative_gap": 4.186659037063237e-08,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21366.8878366157,
+    "dual_scenario_min_margin": 6.885665061417967e-05,
+    "dual_solver_info": {
+      "iters": 41,
+      "res": 7.73070496506989e-12,
+      "mu": 2.6833998835670373e-12
+    },
+    "pinned_solver_info": {
+      "iters": 39,
+      "res": 8.640199666842818e-12,
+      "mu": 4.940030523782331e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 1.1842384309993577
+  }
+}
+CLEAN_DONE hybrid_S50_seed103
+CLEAN_START exact_S100_seed99 2026-11-12T15:54:34.119565+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.068e+02 s=8.683e-15
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   2 r=2.341e+01 s=1.400e+00
+    admm k=   3 r=1.849e+01 s=2.321e-01
+    admm k=  10 r=1.982e+00 s=2.866e-02
+    admm k=  20 r=5.687e-02 s=8.467e-03
+    admm k=  30 r=2.549e-02 s=5.291e-03
+    admm k=  40 r=1.512e-02 s=3.461e-03
+    admm k=  50 r=9.468e-03 s=2.331e-03
+    admm k=  60 r=6.179e-03 s=1.598e-03
+    admm k=  70 r=4.151e-03 s=1.108e-03
+    admm k=  80 r=2.841e-03 s=7.739e-04
+    admm k=  90 r=1.966e-03 s=5.427e-04
+    admm k= 100 r=1.371e-03 s=3.817e-04
+    admm k= 110 r=9.600e-04 s=2.690e-04
+    admm k= 120 r=6.744e-04 s=1.899e-04
+    admm k= 130 r=4.749e-04 s=1.342e-04
+    admm k= 140 r=3.349e-04 s=9.491e-05
+    admm k= 150 r=2.366e-04 s=6.718e-05
+    admm k= 160 r=1.672e-04 s=4.758e-05
+    admm k= 170 r=1.183e-04 s=3.372e-05
+SUMMARY {
+  "S": 100,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 175,
+  "iterations_total": 175,
+  "r_terminal": 9.956668274398246e-05,
+  "s_terminal": 2.8391094982295676e-05,
+  "algorithm_wall_measured": 232.5526543220003,
+  "algorithm_wall_function": 232.55253699199966,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 1.1884649236959532e-07,
+    "mu": 6.40118917061575e-09,
+    "iters": 45
+  },
+  "certificate": {
+    "p_low": 2307386.82288173,
+    "q_scenario_primal_plus_first_stage": 2307386.82985047,
+    "q_primal_dual_spread": 0.006968740373849869,
+    "V_pinned": 2307387.239709322,
+    "V_pinned_dual_lower": 2307387.2330049756,
+    "V_primal_dual_spread": 0.006704346276819706,
+    "absolute_gap": 0.4168275920674205,
+    "relative_gap": 1.8064920365057746e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21775.883008164703,
+    "dual_scenario_min_margin": 6.881791705382057e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 5.305478834038979e-10,
+      "mu": 5.312426632496031e-12
+    },
+    "pinned_solver_info": {
+      "iters": 47,
+      "res": 8.185452315956354e-12,
+      "mu": 2.298711989045141e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.681190916999185
+  }
+}
+CLEAN_DONE exact_S100_seed99
+CLEAN_START ml_S100_seed99 2026-11-12T15:58:31.050520+00:00
+    ml k=  1 r=2.765e+02 s=8.683e-15
+    ml k=  2 r=3.746e+02 s=2.775e+00
+    ml k=  3 r=3.271e+02 s=3.750e+00
+    ml k=  4 r=9.771e+01 s=4.125e+00
+    ml k=  5 r=2.737e+01 s=8.488e-01
+    ml k=  6 r=1.466e+01 s=2.929e-01
+    ml k=  7 r=9.392e+00 s=1.520e-01
+    ml k=  8 r=8.011e+00 s=9.846e-02
+    ml k=  9 r=6.469e+00 s=4.972e-02
+    ml k= 10 r=6.780e+00 s=4.852e-02
+    ml k= 11 r=6.647e+00 s=1.822e-02
+    ml k= 12 r=7.635e+00 s=2.864e-02
+    ml k= 13 r=7.972e+00 s=1.755e-02
+    ml k= 14 r=6.178e+00 s=6.627e-02
+    ml k= 15 r=7.677e+00 s=5.249e-02
+    ml k= 16 r=4.973e+00 s=1.979e-02
+    ml k= 17 r=4.589e+00 s=1.218e-02
+    ml k= 18 r=3.756e+00 s=1.494e-02
+    ml k= 19 r=4.383e+00 s=1.197e-02
+    ml k= 20 r=4.145e+00 s=7.314e-03
+    ml k= 21 r=4.152e+00 s=5.824e-03
+    ml k= 22 r=4.235e+00 s=5.726e-04
+    ml k= 23 r=4.463e+00 s=1.181e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1249, in close
+    self._fileobj.write(buf)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S100_seed99 1
+CLEAN_START hybrid_S100_seed99 2026-11-12T15:58:35.776005+00:00
+    ml k=  1 r=2.765e+02 s=8.683e-15
+    ml k=  2 r=3.746e+02 s=2.775e+00
+    ml k=  3 r=3.271e+02 s=3.750e+00
+    ml k=  4 r=9.771e+01 s=4.125e+00
+    ml k=  5 r=2.737e+01 s=8.488e-01
+    ml k=  6 r=1.466e+01 s=2.929e-01
+    ml k=  7 r=9.392e+00 s=1.520e-01
+    ml k=  8 r=8.011e+00 s=9.846e-02
+    ml k=  9 r=6.469e+00 s=4.972e-02
+    ml k= 10 r=6.780e+00 s=4.852e-02
+    ml k= 11 r=6.647e+00 s=1.822e-02
+    ml k= 12 r=7.635e+00 s=2.864e-02
+    ml k= 13 r=7.972e+00 s=1.755e-02
+    ml k= 14 r=6.178e+00 s=6.627e-02
+    ml k= 15 r=7.677e+00 s=5.249e-02
+    ml k= 16 r=4.973e+00 s=1.979e-02
+    ml k= 17 r=4.589e+00 s=1.218e-02
+    ml k= 18 r=3.756e+00 s=1.494e-02
+    ml k= 19 r=4.383e+00 s=1.197e-02
+    ml k= 20 r=4.145e+00 s=7.314e-03
+    ml k= 21 r=4.152e+00 s=5.824e-03
+    ml k= 22 r=4.235e+00 s=5.726e-04
+    ml k= 23 r=4.463e+00 s=1.181e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.010e+02 s=1.287e-03
+    admm k=   2 r=5.262e+01 s=8.411e-01
+    admm k=   3 r=2.547e+01 s=3.180e-01
+    admm k=  10 r=4.777e-01 s=1.076e-02
+    admm k=  20 r=2.078e-02 s=2.719e-03
+    admm k=  30 r=7.704e-03 s=1.778e-03
+    admm k=  40 r=4.933e-03 s=1.185e-03
+    admm k=  50 r=3.235e-03 s=7.981e-04
+    admm k=  60 r=2.148e-03 s=5.420e-04
+    admm k=  70 r=1.441e-03 s=3.708e-04
+    admm k=  80 r=9.756e-04 s=2.552e-04
+    admm k=  90 r=6.653e-04 s=1.765e-04
+    admm k= 100 r=4.566e-04 s=1.226e-04
+    admm k= 110 r=3.150e-04 s=8.545e-05
+    admm k= 120 r=2.184e-04 s=5.974e-05
+    admm k= 130 r=1.519e-04 s=4.186e-05
+    admm k= 140 r=1.060e-04 s=2.939e-05
+SUMMARY {
+  "S": 100,
+  "seed": 99,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 142,
+  "iterations_total": 165,
+  "r_terminal": 9.872284788712784e-05,
+  "s_terminal": 2.739057423773353e-05,
+  "algorithm_wall_measured": 190.9251836049998,
+  "algorithm_wall_function": 190.9250017049999,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.008316212565304064,
+    0.0025362225652592633,
+    0.0006627507389804005
+  ],
+  "ml_component_sum_seconds": [
+    0.19127288900199346,
+    0.05833311900096305,
+    0.01524326699654921
+  ],
+  "ml_other_seconds": 0.004870232000030228,
+  "inner_qp_worst": {
+    "res": 4.7338481307113156e-07,
+    "mu": 2.7233348315161436e-09,
+    "iters": 46
+  },
+  "certificate": {
+    "p_low": 2307386.8279365697,
+    "q_scenario_primal_plus_first_stage": 2307386.834904724,
+    "q_primal_dual_spread": 0.006968154106289148,
+    "V_pinned": 2307387.2396966233,
+    "V_pinned_dual_lower": 2307387.2329930677,
+    "V_primal_dual_spread": 0.006703555583953857,
+    "absolute_gap": 0.41176005359739065,
+    "relative_gap": 1.7845297919361703e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 23464.27146739815,
+    "dual_scenario_min_margin": 6.881801527924836e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 9.094947017729282e-12,
+      "mu": 4.144146176887653e-12
+    },
+    "pinned_solver_info": {
+      "iters": 48,
+      "res": 8.185452315956354e-12,
+      "mu": 2.1355660062005436e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 9.094947017729282e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.651727650999419
+  }
+}
+CLEAN_DONE hybrid_S100_seed99
+CLEAN_START exact_S100_seed100 2026-11-12T16:01:51.218169+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.064e+02 s=8.683e-15
+    admm k=   2 r=2.361e+01 s=1.398e+00
+    admm k=   3 r=1.864e+01 s=2.340e-01
+    admm k=  10 r=2.164e+00 s=2.988e-02
+    admm k=  20 r=5.780e-02 s=8.717e-03
+    admm k=  30 r=2.614e-02 s=5.465e-03
+    admm k=  40 r=1.561e-02 s=3.576e-03
+    admm k=  50 r=9.799e-03 s=2.405e-03
+    admm k=  60 r=6.398e-03 s=1.646e-03
+    admm k=  70 r=4.292e-03 s=1.139e-03
+    admm k=  80 r=2.931e-03 s=7.939e-04
+    admm k=  90 r=2.024e-03 s=5.558e-04
+    admm k= 100 r=1.408e-03 s=3.904e-04
+    admm k= 110 r=9.841e-04 s=2.748e-04
+    admm k= 120 r=6.903e-04 s=1.938e-04
+    admm k= 130 r=4.854e-04 s=1.369e-04
+    admm k= 140 r=3.420e-04 s=9.675e-05
+    admm k= 150 r=2.414e-04 s=6.846e-05
+    admm k= 160 r=1.705e-04 s=4.848e-05
+    admm k= 170 r=1.206e-04 s=3.434e-05
+SUMMARY {
+  "S": 100,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 176,
+  "iterations_total": 176,
+  "r_terminal": 9.801724503708548e-05,
+  "s_terminal": 2.7934695792775573e-05,
+  "algorithm_wall_measured": 239.55496725899957,
+  "algorithm_wall_function": 239.55484989900015,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 2.0936467926002678e-07,
+    "mu": 3.139810238027693e-09,
+    "iters": 47
+  },
+  "certificate": {
+    "p_low": 2318190.215959695,
+    "q_scenario_primal_plus_first_stage": 2318190.2229292733,
+    "q_primal_dual_spread": 0.006969578098505735,
+    "V_pinned": 2318190.6257396117,
+    "V_pinned_dual_lower": 2318190.6190401325,
+    "V_primal_dual_spread": 0.0066994791850447655,
+    "absolute_gap": 0.4097799165174365,
+    "relative_gap": 1.7676716677358328e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21786.94240487874,
+    "dual_scenario_min_margin": 6.879398642922752e-05,
+    "dual_solver_info": {
+      "iters": 46,
+      "res": 2.3350710254277374e-11,
+      "mu": 1.1452485145912929e-12
+    },
+    "pinned_solver_info": {
+      "iters": 38,
+      "res": 8.185452315956354e-12,
+      "mu": 6.989546142508145e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.4126404210001056
+  }
+}
+CLEAN_DONE exact_S100_seed100
+CLEAN_START ml_S100_seed100 2026-11-12T16:05:54.952228+00:00
+    ml k=  1 r=2.775e+02 s=8.683e-15
+    ml k=  2 r=3.775e+02 s=2.785e+00
+    ml k=  3 r=3.271e+02 s=3.779e+00
+    ml k=  4 r=9.806e+01 s=4.134e+00
+    ml k=  5 r=2.604e+01 s=8.681e-01
+    ml k=  6 r=1.359e+01 s=2.755e-01
+    ml k=  7 r=8.417e+00 s=1.372e-01
+    ml k=  8 r=7.316e+00 s=8.680e-02
+    ml k=  9 r=6.242e+00 s=4.252e-02
+    ml k= 10 r=6.381e+00 s=4.414e-02
+    ml k= 11 r=6.024e+00 s=1.545e-02
+    ml k= 12 r=6.865e+00 s=2.690e-02
+    ml k= 13 r=6.675e+00 s=2.081e-02
+    ml k= 14 r=5.592e+00 s=6.208e-02
+    ml k= 15 r=5.867e+00 s=4.387e-02
+    ml k= 16 r=3.762e+00 s=1.739e-02
+    ml k= 17 r=3.804e+00 s=1.126e-02
+    ml k= 18 r=3.915e+00 s=1.458e-02
+    ml k= 19 r=3.656e+00 s=1.183e-02
+    ml k= 20 r=3.919e+00 s=7.599e-03
+    ml k= 21 r=4.458e+00 s=5.649e-03
+    ml k= 22 r=4.494e+00 s=7.223e-04
+    ml k= 23 r=4.634e+00 s=1.090e-03
+    ml k= 24 r=4.822e+00 s=1.128e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1249, in close
+    self._fileobj.write(buf)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S100_seed100 1
+CLEAN_START hybrid_S100_seed100 2026-11-12T16:05:59.557243+00:00
+    ml k=  1 r=2.775e+02 s=8.683e-15
+    ml k=  2 r=3.775e+02 s=2.785e+00
+    ml k=  3 r=3.271e+02 s=3.779e+00
+    ml k=  4 r=9.806e+01 s=4.134e+00
+    ml k=  5 r=2.604e+01 s=8.681e-01
+    ml k=  6 r=1.359e+01 s=2.755e-01
+    ml k=  7 r=8.417e+00 s=1.372e-01
+    ml k=  8 r=7.316e+00 s=8.680e-02
+    ml k=  9 r=6.242e+00 s=4.252e-02
+    ml k= 10 r=6.381e+00 s=4.414e-02
+    ml k= 11 r=6.024e+00 s=1.545e-02
+    ml k= 12 r=6.865e+00 s=2.690e-02
+    ml k= 13 r=6.675e+00 s=2.081e-02
+    ml k= 14 r=5.592e+00 s=6.208e-02
+    ml k= 15 r=5.867e+00 s=4.387e-02
+    ml k= 16 r=3.762e+00 s=1.739e-02
+    ml k= 17 r=3.804e+00 s=1.126e-02
+    ml k= 18 r=3.915e+00 s=1.458e-02
+    ml k= 19 r=3.656e+00 s=1.183e-02
+    ml k= 20 r=3.919e+00 s=7.599e-03
+    ml k= 21 r=4.458e+00 s=5.649e-03
+    ml k= 22 r=4.494e+00 s=7.223e-04
+    ml k= 23 r=4.634e+00 s=1.090e-03
+    ml k= 24 r=4.822e+00 s=1.128e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=9.736e+01 s=1.420e-03
+    admm k=   2 r=5.203e+01 s=8.182e-01
+    admm k=   3 r=2.542e+01 s=3.155e-01
+    admm k=  10 r=4.808e-01 s=1.091e-02
+    admm k=  20 r=2.081e-02 s=2.770e-03
+    admm k=  30 r=7.855e-03 s=1.808e-03
+    admm k=  40 r=5.023e-03 s=1.204e-03
+    admm k=  50 r=3.289e-03 s=8.109e-04
+    admm k=  60 r=2.182e-03 s=5.508e-04
+    admm k=  70 r=1.464e-03 s=3.770e-04
+    admm k=  80 r=9.909e-04 s=2.596e-04
+    admm k=  90 r=6.760e-04 s=1.796e-04
+    admm k= 100 r=4.642e-04 s=1.249e-04
+    admm k= 110 r=3.205e-04 s=8.708e-05
+    admm k= 120 r=2.223e-04 s=6.091e-05
+    admm k= 130 r=1.548e-04 s=4.271e-05
+    admm k= 140 r=1.081e-04 s=3.000e-05
+SUMMARY {
+  "S": 100,
+  "seed": 100,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 24,
+  "K_tail": 143,
+  "iterations_total": 167,
+  "r_terminal": 9.710042962790166e-05,
+  "s_terminal": 2.699726740576687e-05,
+  "algorithm_wall_measured": 196.29110394200052,
+  "algorithm_wall_function": 196.29092336300073,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.00886186654164097,
+    0.0025476872917427804,
+    0.0007635994165487622
+  ],
+  "ml_component_sum_seconds": [
+    0.21268479699938325,
+    0.061144495001826726,
+    0.01832638599717029
+  ],
+  "ml_other_seconds": 0.004631923002307303,
+  "inner_qp_worst": {
+    "res": 5.136340841538356e-08,
+    "mu": 4.667363403868015e-09,
+    "iters": 47
+  },
+  "certificate": {
+    "p_low": 2318190.2221179316,
+    "q_scenario_primal_plus_first_stage": 2318190.2290875753,
+    "q_primal_dual_spread": 0.006969643756747246,
+    "V_pinned": 2318190.626075532,
+    "V_pinned_dual_lower": 2318190.6193759274,
+    "V_primal_dual_spread": 0.006699604447931051,
+    "absolute_gap": 0.4039576002396643,
+    "relative_gap": 1.7425558799510546e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 23339.822484371634,
+    "dual_scenario_min_margin": 6.87940264469944e-05,
+    "dual_solver_info": {
+      "iters": 46,
+      "res": 4.017225441188543e-11,
+      "mu": 1.2776237821146113e-12
+    },
+    "pinned_solver_info": {
+      "iters": 38,
+      "res": 9.094947017729282e-12,
+      "mu": 7.247936618566745e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 9.094947017729282e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 9.094947017729282e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.480890120999902
+  }
+}
+CLEAN_DONE hybrid_S100_seed100
+CLEAN_START exact_S100_seed101 2026-11-12T16:09:20.159552+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.063e+02 s=8.683e-15
+    admm k=   2 r=2.366e+01 s=1.397e+00
+    admm k=   3 r=1.866e+01 s=2.347e-01
+    admm k=  10 r=2.170e+00 s=2.996e-02
+    admm k=  20 r=5.797e-02 s=8.768e-03
+    admm k=  30 r=2.628e-02 s=5.500e-03
+    admm k=  40 r=1.571e-02 s=3.599e-03
+    admm k=  50 r=9.868e-03 s=2.419e-03
+    admm k=  60 r=6.442e-03 s=1.655e-03
+    admm k=  70 r=4.319e-03 s=1.145e-03
+    admm k=  80 r=2.947e-03 s=7.972e-04
+    admm k=  90 r=2.034e-03 s=5.579e-04
+    admm k= 100 r=1.414e-03 s=3.917e-04
+    admm k= 110 r=9.880e-04 s=2.756e-04
+    admm k= 120 r=6.927e-04 s=1.943e-04
+    admm k= 130 r=4.870e-04 s=1.372e-04
+    admm k= 140 r=3.430e-04 s=9.699e-05
+    admm k= 150 r=2.420e-04 s=6.862e-05
+    admm k= 160 r=1.710e-04 s=4.858e-05
+    admm k= 170 r=1.209e-04 s=3.442e-05
+SUMMARY {
+  "S": 100,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 176,
+  "iterations_total": 176,
+  "r_terminal": 9.82412432469787e-05,
+  "s_terminal": 2.7993377468992344e-05,
+  "algorithm_wall_measured": 221.31343831100003,
+  "algorithm_wall_function": 221.3133227819999,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 1.7724420886544578e-07,
+    "mu": 1.3886668406795768e-09,
+    "iters": 44
+  },
+  "certificate": {
+    "p_low": 2313485.9333328716,
+    "q_scenario_primal_plus_first_stage": 2313485.9403025005,
+    "q_primal_dual_spread": 0.006969628855586052,
+    "V_pinned": 2313486.3450447987,
+    "V_pinned_dual_lower": 2313486.3383479053,
+    "V_primal_dual_spread": 0.006696893367916346,
+    "absolute_gap": 0.4117119270376861,
+    "relative_gap": 1.7796171617285893e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21790.03919866358,
+    "dual_scenario_min_margin": 6.876852421555668e-05,
+    "dual_solver_info": {
+      "iters": 42,
+      "res": 8.185452315956354e-12,
+      "mu": 4.164516761149648e-12
+    },
+    "pinned_solver_info": {
+      "iters": 46,
+      "res": 8.185452315956354e-12,
+      "mu": 4.6740036859184305e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.5114114590005556
+  }
+}
+CLEAN_DONE exact_S100_seed101
+CLEAN_START ml_S100_seed101 2026-11-12T16:13:05.818436+00:00
+    ml k=  1 r=2.777e+02 s=8.683e-15
+    ml k=  2 r=3.782e+02 s=2.787e+00
+    ml k=  3 r=3.270e+02 s=3.786e+00
+    ml k=  4 r=9.792e+01 s=4.131e+00
+    ml k=  5 r=2.586e+01 s=8.672e-01
+    ml k=  6 r=1.352e+01 s=2.761e-01
+    ml k=  7 r=8.334e+00 s=1.376e-01
+    ml k=  8 r=7.218e+00 s=8.693e-02
+    ml k=  9 r=6.311e+00 s=4.276e-02
+    ml k= 10 r=6.195e+00 s=4.398e-02
+    ml k= 11 r=6.600e+00 s=1.564e-02
+    ml k= 12 r=7.360e+00 s=2.686e-02
+    ml k= 13 r=7.464e+00 s=1.888e-02
+    ml k= 14 r=6.239e+00 s=6.239e-02
+    ml k= 15 r=8.181e+00 s=4.664e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1249, in close
+    self._fileobj.write(buf)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S100_seed101 1
+CLEAN_START hybrid_S100_seed101 2026-11-12T16:13:09.905072+00:00
+    ml k=  1 r=2.777e+02 s=8.683e-15
+    ml k=  2 r=3.782e+02 s=2.787e+00
+    ml k=  3 r=3.270e+02 s=3.786e+00
+    ml k=  4 r=9.792e+01 s=4.131e+00
+    ml k=  5 r=2.586e+01 s=8.672e-01
+    ml k=  6 r=1.352e+01 s=2.761e-01
+    ml k=  7 r=8.334e+00 s=1.376e-01
+    ml k=  8 r=7.218e+00 s=8.693e-02
+    ml k=  9 r=6.311e+00 s=4.276e-02
+    ml k= 10 r=6.195e+00 s=4.398e-02
+    ml k= 11 r=6.600e+00 s=1.564e-02
+    ml k= 12 r=7.360e+00 s=2.686e-02
+    ml k= 13 r=7.464e+00 s=1.888e-02
+    ml k= 14 r=6.239e+00 s=6.239e-02
+    ml k= 15 r=8.181e+00 s=4.664e-02
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=8.697e+01 s=1.862e-02
+    admm k=   2 r=5.036e+01 s=8.109e-01
+    admm k=   3 r=1.691e+01 s=3.418e-01
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=  10 r=4.851e-01 s=1.153e-02
+    admm k=  20 r=2.029e-02 s=2.738e-03
+    admm k=  30 r=7.755e-03 s=1.783e-03
+    admm k=  40 r=4.950e-03 s=1.188e-03
+    admm k=  50 r=3.236e-03 s=8.008e-04
+    admm k=  60 r=2.148e-03 s=5.451e-04
+    admm k=  70 r=1.443e-03 s=3.739e-04
+    admm k=  80 r=9.792e-04 s=2.580e-04
+    admm k=  90 r=6.696e-04 s=1.789e-04
+    admm k= 100 r=4.608e-04 s=1.245e-04
+    admm k= 110 r=3.188e-04 s=8.696e-05
+    admm k= 120 r=2.215e-04 s=6.090e-05
+    admm k= 130 r=1.544e-04 s=4.274e-05
+    admm k= 140 r=1.080e-04 s=3.005e-05
+SUMMARY {
+  "S": 100,
+  "seed": 101,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 15,
+  "K_tail": 143,
+  "iterations_total": 158,
+  "r_terminal": 9.704313060227112e-05,
+  "s_terminal": 2.704492854523271e-05,
+  "algorithm_wall_measured": 180.01297644199985,
+  "algorithm_wall_function": 180.01281470199956,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.009023788533219583,
+    0.0025788849332457177,
+    0.0007577394000691129
+  ],
+  "ml_component_sum_seconds": [
+    0.13535682799829374,
+    0.03868327399868576,
+    0.011366091001036693
+  ],
+  "ml_other_seconds": 0.0054974250015220605,
+  "inner_qp_worst": {
+    "res": 1.438963513900049e-07,
+    "mu": 1.4321280353880955e-09,
+    "iters": 44
+  },
+  "certificate": {
+    "p_low": 2313485.9412237736,
+    "q_scenario_primal_plus_first_stage": 2313485.9482231312,
+    "q_primal_dual_spread": 0.006999357603490353,
+    "V_pinned": 2313486.346915022,
+    "V_pinned_dual_lower": 2313486.340218133,
+    "V_primal_dual_spread": 0.00669688917696476,
+    "absolute_gap": 0.40569124836474657,
+    "relative_gap": 1.753592883949606e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 23821.962322158113,
+    "dual_scenario_min_margin": 6.877040868857875e-05,
+    "dual_solver_info": {
+      "iters": 42,
+      "res": 7.73070496506989e-12,
+      "mu": 6.343302752249055e-11
+    },
+    "pinned_solver_info": {
+      "iters": 46,
+      "res": 8.640199666842818e-12,
+      "mu": 4.6651529954009076e-12
+    },
+    "dual_feasibility": {
+      "balance_inf": 7.73070496506989e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.5551449360000333
+  }
+}
+CLEAN_DONE hybrid_S100_seed101
+CLEAN_START exact_S100_seed102 2026-11-12T16:16:14.312891+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.058e+02 s=8.683e-15
+    admm k=   2 r=2.393e+01 s=1.395e+00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   3 r=1.885e+01 s=2.370e-01
+    admm k=  10 r=2.460e+00 s=3.299e-02
+    admm k=  20 r=5.948e-02 s=9.151e-03
+    admm k=  30 r=2.731e-02 s=5.761e-03
+    admm k=  40 r=1.644e-02 s=3.771e-03
+    admm k=  50 r=1.036e-02 s=2.531e-03
+    admm k=  60 r=6.766e-03 s=1.727e-03
+    admm k=  70 r=4.528e-03 s=1.191e-03
+    admm k=  80 r=3.081e-03 s=8.273e-04
+    admm k=  90 r=2.120e-03 s=5.776e-04
+    admm k= 100 r=1.469e-03 s=4.048e-04
+    admm k= 110 r=1.024e-03 s=2.844e-04
+    admm k= 120 r=7.166e-04 s=2.003e-04
+    admm k= 130 r=5.029e-04 s=1.413e-04
+    admm k= 140 r=3.538e-04 s=9.980e-05
+    admm k= 150 r=2.493e-04 s=7.057e-05
+    admm k= 160 r=1.760e-04 s=4.994e-05
+    admm k= 170 r=1.244e-04 s=3.537e-05
+SUMMARY {
+  "S": 100,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 177,
+  "iterations_total": 177,
+  "r_terminal": 9.759147222512364e-05,
+  "s_terminal": 2.7787783699657443e-05,
+  "algorithm_wall_measured": 238.0490902649999,
+  "algorithm_wall_function": 238.0489636350003,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 2.1505544489652806e-07,
+    "mu": 1.4552440429032443e-09,
+    "iters": 47
+  },
+  "certificate": {
+    "p_low": 2325474.5695408224,
+    "q_scenario_primal_plus_first_stage": 2325474.576573769,
+    "q_primal_dual_spread": 0.0070329466834664345,
+    "V_pinned": 2325474.976588319,
+    "V_pinned_dual_lower": 2325474.9698812068,
+    "V_primal_dual_spread": 0.006707112304866314,
+    "absolute_gap": 0.4070474966429174,
+    "relative_gap": 1.750384639653536e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21628.886034189156,
+    "dual_scenario_min_margin": 6.884595495648682e-05,
+    "dual_solver_info": {
+      "iters": 47,
+      "res": 8.185452315956354e-12,
+      "mu": 1.232559462500886e-10
+    },
+    "pinned_solver_info": {
+      "iters": 48,
+      "res": 8.640199666842818e-12,
+      "mu": 1.8705755263892178e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.723550484000043
+  }
+}
+CLEAN_DONE exact_S100_seed102
+CLEAN_START ml_S100_seed102 2026-11-12T16:20:16.861792+00:00
+    ml k=  1 r=2.790e+02 s=8.683e-15
+    ml k=  2 r=3.818e+02 s=2.800e+00
+    ml k=  3 r=3.276e+02 s=3.822e+00
+    ml k=  4 r=9.690e+01 s=4.125e+00
+    ml k=  5 r=2.649e+01 s=8.609e-01
+    ml k=  6 r=1.390e+01 s=2.837e-01
+    ml k=  7 r=8.538e+00 s=1.428e-01
+    ml k=  8 r=7.357e+00 s=9.018e-02
+    ml k=  9 r=6.251e+00 s=4.483e-02
+    ml k= 10 r=6.279e+00 s=4.544e-02
+    ml k= 11 r=6.129e+00 s=1.615e-02
+    ml k= 12 r=6.982e+00 s=2.748e-02
+    ml k= 13 r=6.874e+00 s=1.948e-02
+    ml k= 14 r=5.433e+00 s=6.280e-02
+    ml k= 15 r=6.071e+00 s=4.593e-02
+    ml k= 16 r=3.715e+00 s=1.812e-02
+    ml k= 17 r=3.338e+00 s=1.131e-02
+    ml k= 18 r=3.089e+00 s=1.473e-02
+    ml k= 19 r=3.599e+00 s=1.206e-02
+    ml k= 20 r=3.291e+00 s=7.909e-03
+    ml k= 21 r=3.660e+00 s=5.342e-03
+    ml k= 22 r=3.695e+00 s=9.196e-04
+    ml k= 23 r=3.758e+00 s=9.432e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1249, in close
+    self._fileobj.write(buf)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S100_seed102 1
+CLEAN_START hybrid_S100_seed102 2026-11-12T16:20:21.394295+00:00
+    ml k=  1 r=2.790e+02 s=8.683e-15
+    ml k=  2 r=3.818e+02 s=2.800e+00
+    ml k=  3 r=3.276e+02 s=3.822e+00
+    ml k=  4 r=9.690e+01 s=4.125e+00
+    ml k=  5 r=2.649e+01 s=8.609e-01
+    ml k=  6 r=1.390e+01 s=2.837e-01
+    ml k=  7 r=8.538e+00 s=1.428e-01
+    ml k=  8 r=7.357e+00 s=9.018e-02
+    ml k=  9 r=6.251e+00 s=4.483e-02
+    ml k= 10 r=6.279e+00 s=4.544e-02
+    ml k= 11 r=6.129e+00 s=1.615e-02
+    ml k= 12 r=6.982e+00 s=2.748e-02
+    ml k= 13 r=6.874e+00 s=1.948e-02
+    ml k= 14 r=5.433e+00 s=6.280e-02
+    ml k= 15 r=6.071e+00 s=4.593e-02
+    ml k= 16 r=3.715e+00 s=1.812e-02
+    ml k= 17 r=3.338e+00 s=1.131e-02
+    ml k= 18 r=3.089e+00 s=1.473e-02
+    ml k= 19 r=3.599e+00 s=1.206e-02
+    ml k= 20 r=3.291e+00 s=7.909e-03
+    ml k= 21 r=3.660e+00 s=5.342e-03
+    ml k= 22 r=3.695e+00 s=9.196e-04
+    ml k= 23 r=3.758e+00 s=9.432e-04
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=9.579e+01 s=9.744e-04
+    admm k=   2 r=5.099e+01 s=7.822e-01
+    admm k=   3 r=2.239e+01 s=3.205e-01
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=  10 r=4.903e-01 s=1.116e-02
+    admm k=  20 r=2.116e-02 s=2.819e-03
+    admm k=  30 r=8.028e-03 s=1.834e-03
+    admm k=  40 r=5.106e-03 s=1.220e-03
+    admm k=  50 r=3.332e-03 s=8.216e-04
+    admm k=  60 r=2.209e-03 s=5.586e-04
+    admm k=  70 r=1.482e-03 s=3.827e-04
+    admm k=  80 r=1.004e-03 s=2.638e-04
+    admm k=  90 r=6.856e-04 s=1.828e-04
+    admm k= 100 r=4.713e-04 s=1.272e-04
+    admm k= 110 r=3.258e-04 s=8.883e-05
+    admm k= 120 r=2.263e-04 s=6.220e-05
+    admm k= 130 r=1.577e-04 s=4.366e-05
+    admm k= 140 r=1.103e-04 s=3.070e-05
+SUMMARY {
+  "S": 100,
+  "seed": 102,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 143,
+  "iterations_total": 166,
+  "r_terminal": 9.910732006711646e-05,
+  "s_terminal": 2.7628696569683767e-05,
+  "algorithm_wall_measured": 190.7486754499996,
+  "algorithm_wall_function": 190.74850316999982,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.008597500173891603,
+    0.0025144287826507302,
+    0.0007381741738952215
+  ],
+  "ml_component_sum_seconds": [
+    0.19774250399950688,
+    0.057831862000966794,
+    0.016978005999590096
+  ],
+  "ml_other_seconds": 0.006727293999574613,
+  "inner_qp_worst": {
+    "res": 3.566588498427059e-07,
+    "mu": 1.5430005943007642e-09,
+    "iters": 48
+  },
+  "certificate": {
+    "p_low": 2325474.567239387,
+    "q_scenario_primal_plus_first_stage": 2325474.5742710023,
+    "q_primal_dual_spread": 0.007031615357846022,
+    "V_pinned": 2325474.9794152123,
+    "V_pinned_dual_lower": 2325474.9727079906,
+    "V_primal_dual_spread": 0.006707221735268831,
+    "absolute_gap": 0.4121758253313601,
+    "relative_gap": 1.7724374677666825e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 23274.12309421014,
+    "dual_scenario_min_margin": 6.884612594149075e-05,
+    "dual_solver_info": {
+      "iters": 47,
+      "res": 8.185452315956354e-12,
+      "mu": 1.2059924121617476e-10
+    },
+    "pinned_solver_info": {
+      "iters": 48,
+      "res": 8.185452315956354e-12,
+      "mu": 1.893493369624768e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.6957684199996947
+  }
+}
+CLEAN_DONE hybrid_S100_seed102
+CLEAN_START exact_S100_seed103 2026-11-12T16:23:36.563413+00:00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.056e+02 s=8.670e-15
+    admm k=   2 r=2.409e+01 s=1.394e+00
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=   3 r=1.896e+01 s=2.383e-01
+    admm k=  10 r=2.591e+00 s=3.477e-02
+    admm k=  20 r=6.038e-02 s=9.380e-03
+    admm k=  30 r=2.794e-02 s=5.914e-03
+    admm k=  40 r=1.688e-02 s=3.870e-03
+    admm k=  50 r=1.066e-02 s=2.594e-03
+    admm k=  60 r=6.955e-03 s=1.767e-03
+    admm k=  70 r=4.648e-03 s=1.217e-03
+    admm k=  80 r=3.157e-03 s=8.440e-04
+    admm k=  90 r=2.168e-03 s=5.885e-04
+    admm k= 100 r=1.501e-03 s=4.120e-04
+    admm k= 110 r=1.044e-03 s=2.892e-04
+    admm k= 120 r=7.298e-04 s=2.035e-04
+    admm k= 130 r=5.117e-04 s=1.435e-04
+    admm k= 140 r=3.596e-04 s=1.013e-04
+    admm k= 150 r=2.533e-04 s=7.161e-05
+    admm k= 160 r=1.787e-04 s=5.066e-05
+    admm k= 170 r=1.262e-04 s=3.587e-05
+SUMMARY {
+  "S": 100,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "exact",
+  "K_ml": 0,
+  "K_tail": 177,
+  "iterations_total": 177,
+  "r_terminal": 9.902301292271057e-05,
+  "s_terminal": 2.8179564372656633e-05,
+  "algorithm_wall_measured": 233.8208317079998,
+  "algorithm_wall_function": 233.82071194799937,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": null,
+  "ml_component_sum_seconds": null,
+  "ml_other_seconds": null,
+  "inner_qp_worst": {
+    "res": 2.131709559982653e-07,
+    "mu": 4.02955202669658e-09,
+    "iters": 47
+  },
+  "certificate": {
+    "p_low": 2329490.0381884743,
+    "q_scenario_primal_plus_first_stage": 2329490.0451608696,
+    "q_primal_dual_spread": 0.006972395349293947,
+    "V_pinned": 2329490.4493239364,
+    "V_pinned_dual_lower": 2329490.4426036337,
+    "V_primal_dual_spread": 0.006720302626490593,
+    "absolute_gap": 0.4111354621127248,
+    "relative_gap": 1.7649161635069446e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 21525.139140249066,
+    "dual_scenario_min_margin": 6.885941547807306e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 1.8934714907103967e-10,
+      "mu": 1.1348652071163588e-13
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 8.640199666842818e-12,
+      "mu": 4.399617268192869e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.490791349000574
+  }
+}
+CLEAN_DONE exact_S100_seed103
+CLEAN_START ml_S100_seed103 2026-11-12T16:27:34.700286+00:00
+    ml k=  1 r=2.797e+02 s=8.670e-15
+    ml k=  2 r=3.839e+02 s=2.807e+00
+    ml k=  3 r=3.282e+02 s=3.843e+00
+    ml k=  4 r=9.709e+01 s=4.124e+00
+    ml k=  5 r=2.687e+01 s=8.614e-01
+    ml k=  6 r=1.396e+01 s=2.865e-01
+    ml k=  7 r=8.827e+00 s=1.442e-01
+    ml k=  8 r=7.430e+00 s=9.109e-02
+    ml k=  9 r=6.545e+00 s=4.552e-02
+    ml k= 10 r=6.612e+00 s=4.601e-02
+    ml k= 11 r=6.715e+00 s=1.685e-02
+    ml k= 12 r=7.444e+00 s=2.784e-02
+    ml k= 13 r=7.024e+00 s=2.660e-02
+    ml k= 14 r=5.577e+00 s=5.836e-02
+    ml k= 15 r=6.757e+00 s=3.664e-02
+    ml k= 16 r=4.440e+00 s=1.585e-02
+    ml k= 17 r=4.099e+00 s=1.145e-02
+    ml k= 18 r=3.665e+00 s=1.480e-02
+    ml k= 19 r=4.082e+00 s=1.204e-02
+    ml k= 20 r=3.781e+00 s=8.043e-03
+    ml k= 21 r=4.194e+00 s=5.035e-03
+    ml k= 22 r=4.222e+00 s=6.718e-04
+    ml k= 23 r=4.342e+00 s=1.052e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 796, in _savez
+    format.write_array(fid, val,
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/format.py", line 759, in write_array
+    fp.write(chunk.tobytes('C'))
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1237, in write
+    self._fileobj.write(data)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 795, in _savez
+    with zipf.open(fname, 'w', force_zip64=True) as fid:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1275, in close
+    self._fileobj.seek(self._zinfo.header_offset)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1983, in close
+    self.fp.seek(self.start_dir)
+FileNotFoundError: [Errno 2] No such file or directory
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 152, in <module>
+    child_main(args)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 65, in child_main
+    run_one.main()
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/run_one.py", line 116, in main
+    np.savez_compressed(out / f"{stem}.npz", **arrays)
+  File "/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/experiments/run_contention_free.py", line 43, in robust_savez
+    original_savez(path, **arrays)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 763, in savez_compressed
+    _savez(file, args, kwds, True, allow_pickle=allow_pickle)
+  File "/usr/local/lib/python3.12/site-packages/numpy/lib/_npyio_impl.py", line 800, in _savez
+    zipf.close()
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 1988, in close
+    self._fpclose(fp)
+  File "/usr/local/lib/python3.12/zipfile/__init__.py", line 2088, in _fpclose
+    fp.close()
+FileNotFoundError: [Errno 2] No such file or directory
+CLEAN_FAILED ml_S100_seed103 1
+CLEAN_START hybrid_S100_seed103 2026-11-12T16:27:38.962718+00:00
+    ml k=  1 r=2.797e+02 s=8.670e-15
+    ml k=  2 r=3.839e+02 s=2.807e+00
+    ml k=  3 r=3.282e+02 s=3.843e+00
+    ml k=  4 r=9.709e+01 s=4.124e+00
+    ml k=  5 r=2.687e+01 s=8.614e-01
+    ml k=  6 r=1.396e+01 s=2.865e-01
+    ml k=  7 r=8.827e+00 s=1.442e-01
+    ml k=  8 r=7.430e+00 s=9.109e-02
+    ml k=  9 r=6.545e+00 s=4.552e-02
+    ml k= 10 r=6.612e+00 s=4.601e-02
+    ml k= 11 r=6.715e+00 s=1.685e-02
+    ml k= 12 r=7.444e+00 s=2.784e-02
+    ml k= 13 r=7.024e+00 s=2.660e-02
+    ml k= 14 r=5.577e+00 s=5.836e-02
+    ml k= 15 r=6.757e+00 s=3.664e-02
+    ml k= 16 r=4.440e+00 s=1.585e-02
+    ml k= 17 r=4.099e+00 s=1.145e-02
+    ml k= 18 r=3.665e+00 s=1.480e-02
+    ml k= 19 r=4.082e+00 s=1.204e-02
+    ml k= 20 r=3.781e+00 s=8.043e-03
+    ml k= 21 r=4.194e+00 s=5.035e-03
+    ml k= 22 r=4.222e+00 s=6.718e-04
+    ml k= 23 r=4.342e+00 s=1.052e-03
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:260: RuntimeWarning: divide by zero encountered in divide
+  w_bu = mu_bu / s_bu; w_bl = mu_bl / s_bl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: invalid value encountered in divide
+  v = tau_arr / s_ - mu_
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:281: RuntimeWarning: divide by zero encountered in divide
+  v = tau_arr / s_ - mu_
+    admm k=   1 r=1.003e+02 s=1.181e-03
+    admm k=   2 r=5.075e+01 s=7.711e-01
+    admm k=   3 r=2.434e+01 s=3.158e-01
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:261: RuntimeWarning: divide by zero encountered in divide
+  w_ru = mu_ru / s_ru; w_rl = mu_rl / s_rl
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:73: RuntimeWarning: invalid value encountered in divide
+  cp[..., i] = b[..., i] / dp[..., i]
+/mnt/agents/output/ELSCAM-D-26-03479R2_Resubmission/code/qp_ipm.py:80: RuntimeWarning: invalid value encountered in multiply
+  y[..., i] = -b[..., i - 1] * y[..., i - 1] / dp[..., i]
+    admm k=  10 r=4.964e-01 s=1.128e-02
+    admm k=  20 r=2.186e-02 s=2.908e-03
+    admm k=  30 r=8.308e-03 s=1.890e-03
+    admm k=  40 r=5.268e-03 s=1.257e-03
+    admm k=  50 r=3.434e-03 s=8.460e-04
+    admm k=  60 r=2.275e-03 s=5.750e-04
+    admm k=  70 r=1.525e-03 s=3.940e-04
+    admm k=  80 r=1.033e-03 s=2.716e-04
+    admm k=  90 r=7.057e-04 s=1.882e-04
+    admm k= 100 r=4.852e-04 s=1.310e-04
+    admm k= 110 r=3.354e-04 s=9.149e-05
+    admm k= 120 r=2.330e-04 s=6.408e-05
+    admm k= 130 r=1.624e-04 s=4.498e-05
+    admm k= 140 r=1.136e-04 s=3.163e-05
+SUMMARY {
+  "S": 100,
+  "seed": 103,
+  "rho": 0.01,
+  "T": 24,
+  "algorithm": "hybrid",
+  "K_ml": 23,
+  "K_tail": 144,
+  "iterations_total": 167,
+  "r_terminal": 9.852013611247626e-05,
+  "s_terminal": 2.749253318308607e-05,
+  "algorithm_wall_measured": 205.4817223730006,
+  "algorithm_wall_function": 205.4815449230009,
+  "stop_reason": "converged",
+  "ml_component_mean_seconds": [
+    0.008621351999745062,
+    0.0025532598694711773,
+    0.0007025410440015232
+  ],
+  "ml_component_sum_seconds": [
+    0.1982910959941364,
+    0.058724976997837075,
+    0.016158444012035034
+  ],
+  "ml_other_seconds": 0.0043617169958451996,
+  "inner_qp_worst": {
+    "res": 2.6155972637775804e-07,
+    "mu": 1.4564974317423317e-09,
+    "iters": 47
+  },
+  "certificate": {
+    "p_low": 2329490.044619347,
+    "q_scenario_primal_plus_first_stage": 2329490.0515917395,
+    "q_primal_dual_spread": 0.006972392555326223,
+    "V_pinned": 2329490.4492855296,
+    "V_pinned_dual_lower": 2329490.442565226,
+    "V_primal_dual_spread": 0.006720303557813168,
+    "absolute_gap": 0.4046661825850606,
+    "relative_gap": 1.737144932298629e-07,
+    "relative_gap_valid": true,
+    "first_stage_inf": 23062.52570433999,
+    "dual_scenario_min_margin": 6.885940092615783e-05,
+    "dual_solver_info": {
+      "iters": 44,
+      "res": 1.9120349747936416e-10,
+      "mu": 1.0901522572564392e-13
+    },
+    "pinned_solver_info": {
+      "iters": 41,
+      "res": 8.185452315956354e-12,
+      "mu": 4.3998804371443016e-11
+    },
+    "dual_feasibility": {
+      "balance_inf": 8.640199666842818e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "pinned_feasibility": {
+      "balance_inf": 8.185452315956354e-12,
+      "box_violation": 0.0,
+      "ramp_violation": 0.0,
+      "slack_bound_violation": 0.0
+    },
+    "t0_balance_inf": 0.0,
+    "wall": 2.625118977999591
+  }
+}
+CLEAN_DONE hybrid_S100_seed103
+CLEAN_EXECUTION_FINISHED {"protocol": "strengthened-cold-v1", "protocol_sha256": "cf6aee6e81de097e5e46d771689d3a1bba2bbe69e45cf3d38ecae26f6b40a0e5", "execution": "isolated processes; no parallel compilation, training, or visual inspection", "expected_runs": 45, "complete_runs": 35, "finished_utc": "2026-11-12T16:31:10.254840+00:00"}
